@@ -1,0 +1,12 @@
+.section-wrapper{
+    @apply justify-center items-center flex flex-col h-screen w-full;
+}
+
+.salutation{
+    @apply text-xl;
+    font-family: Montserrat-Bold;
+}
+
+.headline{
+    @apply text-base;
+}

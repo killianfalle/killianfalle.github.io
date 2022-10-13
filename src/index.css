@@ -1,0 +1,106 @@
+:root{
+  --background: #100F0F;
+  --primary: #F6F5F0;
+  --secondary: #FEC822;
+  --white: #F6F5F0;
+  --black: #20262A;
+  --sidebar-width: 6vh;
+  --sidebar-font-size: 1.6vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-white m-0;
+  font-family: Montserrat-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+.center-absolute{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+[type="checkbox"] {
+  color: #ec5627;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input#react-select-address-input,
+textarea[type="text"],
+input[type="email"] {
+  @apply rounded pb-1 pt-5 px-4 2xl:pt-8;
+  border-color: #dfdfdf;
+  border-width: 1px !important;
+}
+
+input#react-select-address-input {
+  width: 100% !important;
+  box-shadow: none;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+.react-select-address-input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none !important;
+  border-width: 0px !important;
+}
+
+textarea,
+input,
+input#react-select-address-input {
+  outline: none;
+}
+
+input:focus-within ~ label,
+input:not(:placeholder-shown) ~ label {
+  /* @apply transform scale-75 -translate-y-6; */
+}
+
+input[type="text"]:focus-within ~ label,
+input[type="password"]:focus-within ~ label,
+input[type="email"]:focus-within ~ label,
+textarea:focus-within ~ label,
+input#react-select-address-input:focus-within ~ label {
+  @apply text-secondary opacity-100;
+}
+
+input[type="range"] {
+  @apply rounded-full w-full h-1.5;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* remove blue outline */
+button:focus {
+  outline: 0;
+}
+
+@import "./assets/fonts/fonts.css";

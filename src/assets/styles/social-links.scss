@@ -1,0 +1,20 @@
+.social-link-container{
+    @apply flex flex-col justify-center items-center space-y-3;
+    position: absolute;
+    left: 20px;
+
+    p {
+        writing-mode: vertical-lr; transform: rotate(180deg);
+        @apply text-sm;
+    }
+
+    .line{
+        background-color: var(--white);
+        width: 0.06vw;
+        height: 2vw;
+    }
+
+    .social-links {
+        @apply flex flex-col justify-center items-center space-y-3;
+    }
+}

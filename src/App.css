@@ -1,0 +1,9 @@
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

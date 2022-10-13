@@ -1,0 +1,12 @@
+import './montserrat/Montserrat-Black.ttf'; 
+import './montserrat/Montserrat-Bold.ttf'; 
+import './montserrat/Montserrat-Italic.ttf'; 
+import './montserrat/Montserrat-Light.ttf'; 
+import './montserrat/Montserrat-LightItalic.ttf'; 
+import './montserrat/Montserrat-Medium.ttf'; 
+import './montserrat/Montserrat-MediumItalic.ttf'; 
+import './montserrat/Montserrat-Regular.ttf'; 
+import './montserrat/Montserrat-SemiBold.ttf'; 
+import './montserrat/Montserrat-SemiBoldItalic.ttf'; 
+import './montserrat/Montserrat-Thin.ttf'; 
+import './montserrat/Montserrat-ThinItalic.ttf'; 
