@@ -19,7 +19,7 @@ const ScrollToTop = () => {
 
   return (
     <div className={`scroll-to-top ${!reveal ? "hidden" : "block"}`} onClick={executeScroll}>
-      <KeyboardDoubleArrowUpIcon sx={{width: '3vw', height: '3vw'}}/>
+      <KeyboardDoubleArrowUpIcon className="icon" sx={{width: '3vw', height: '3vw'}}/>
     </div>
   );
 };

@@ -3,10 +3,12 @@
 }
 
 .salutation{
-    @apply text-xl;
+    @apply text-xl text-center;
     font-family: Montserrat-Bold;
 }
 
 .headline{
-    @apply text-base;
+    @apply text-base text-center;
 }
+
+@import './mobile/section-mobile.scss';

@@ -1,0 +1,29 @@
+
+@media (max-width: 700px) {
+    .social-link-container{
+        @apply top-0 flex-row-reverse space-x-2;
+        left: unset;
+    
+        p {
+            writing-mode: unset;
+            transform: unset;
+            font-size: 1.75vh;
+        }
+    
+        .line{
+            background-color: var(--white);
+            width: 1.5vh;
+            height: 0.06vh;
+        }
+    
+        .social-links {
+            @apply flex-row space-x-3 items-baseline;
+            margin-left: 10px;
+
+            .icon{
+                width: 2vh;
+                height: 2vh;
+            }
+        }
+    }
+}

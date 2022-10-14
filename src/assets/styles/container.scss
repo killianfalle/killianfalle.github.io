@@ -1,17 +1,15 @@
 .page-wrapper{
-    @apply sm:px-8 md:px-24 lg:px-36 xl:px-0;
+    @apply sm:px-4 md:px-24 lg:px-36 xl:px-0;
 }
 
 .page-container{
     @apply h-full w-full;
 
-    .drop-shadow {
-        .header-img {
-            border-bottom: 1.5px solid var(--secondary);
-            filter: drop-shadow(0px 0px 1px var(--secondary));
-            -webkit-filter: drop-shadow(0px 0px 1px var(--secondary));
-            height: 35vh;
-        }
+    .header-img {
+        border-bottom: 1.5px solid var(--secondary);
+        filter: drop-shadow(0px 0px 1px var(--secondary));
+        -webkit-filter: drop-shadow(0px 0px 1px var(--secondary));
+        height: 35vh;
     }
 }
 
@@ -30,3 +28,5 @@
         color: var(--white);
     }
 }
+
+@import './mobile/container-mobile.scss';

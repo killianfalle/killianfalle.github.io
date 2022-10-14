@@ -20,16 +20,13 @@
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
+    @apply flex flex-col fixed right-0;
     width: 2px;
     min-height: 100vh;
     padding: 1rem 0;
     background-color: var(--secondary);
     border-radius: 1.5vw 0px 0px 1.5vw;
     color: var(--primary);
-    position: fixed;
-    right: 0;
     transition: 0.4s ease-in-out;
 
     .menu {
@@ -145,3 +142,5 @@
         transform: scaleX(1);
     }
 }
+
+@import './mobile/navbar-mobile.scss';

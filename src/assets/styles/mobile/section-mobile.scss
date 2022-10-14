@@ -1,0 +1,16 @@
+
+
+@media (max-width: 700px) {
+    .section-wrapper{
+        @apply justify-center items-center flex flex-col h-screen w-full;
+        height: 95vh;
+    }
+    
+    .salutation{
+        font-size: 3.5vh;
+    }
+    
+    .headline{
+        font-size: 1.5vh;
+    }
+}
