@@ -11,6 +11,7 @@
     .navbar {
         @apply w-full p-0 bottom-0;
         min-height: 5vh;
+        background: var(--secondary);
 
         .menu {
             opacity: 1;
