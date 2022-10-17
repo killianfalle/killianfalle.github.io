@@ -9,6 +9,7 @@ export const sectionsList = [
     },
     {
       name: 'Expertise',
+      withBackground: true,
       component: <Expertise />
     },
     {

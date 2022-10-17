@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/",
     component: () => (
-      <Container disableGutters maxWidth="xl" className="page-wrapper">
+      <Container disableGutters maxWidth="3xl" className="page-wrapper">
         <Home />
       </Container>
     )
@@ -18,7 +18,7 @@ const routes = [
   {
     path: "/maintenance",
     component: () => (
-      <Container disableGutters maxWidth="xl" className="page-wrapper">
+      <Container disableGutters maxWidth="3xl" className="page-wrapper">
         <Maintenance />
       </Container>
     )
@@ -27,7 +27,7 @@ const routes = [
     path: "*",
     exact: true,
     component: () => (
-      <Container disableGutters maxWidth="xl" className="page-wrapper">
+      <Container disableGutters maxWidth="3xl" className="page-wrapper">
         <NotFound />
       </Container>
     )

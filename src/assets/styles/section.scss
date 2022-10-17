@@ -1,9 +1,19 @@
 .section-wrapper{
-    @apply  items-center flex flex-col h-screen w-full;
-    margin-top: 8vh;
+    @apply items-center flex flex-col h-screen w-full sm:px-4 md:px-24 lg:px-36 xl:px-52;
+    padding-top: 6vh;
 
     &.centered{
-        @apply justify-center mt-0;
+        @apply justify-center pt-0;
+    }
+
+    &.withBackground{
+        @apply bg-secondary;
+        height: 100%;
+        padding-bottom: 6vh;
+        
+        p{
+            @apply text-black;
+        }
     }
 }
 
@@ -13,25 +23,27 @@
 }
 
 .headline{
-    @apply text-center text-lg -mt-2 uppercase;
-    margin-top: -1.5vh;
+    @apply text-center text-lg uppercase;
+    margin-top: 1.5vh;
 }
 
 .section-title{
     @apply text-2xl md:text-3xl font-bold;
+    margin-bottom: 1vh;
 }
 
 .section-subtitle{
     @apply font-bold text-lg md:text-xl;
-    margin-top: -2.5vh;
-    margin-bottom: 3vh;
+    line-height: 1.5;
 }
 
 .section-content{
-    @apply text-base md:text-lg;
+    @apply md:text-lg;
+    margin-top: 3vh;
 
     p{
         @apply mb-3;
+        line-height: 1.5;
     }
 }
 

@@ -14,8 +14,9 @@ function Home() {
       {/* Sections */}
       {sectionsList.map((section, index) => (
         <Section
+          key={index}
           innerRef={(element) => sectionRefs.current.push(element)}
-          key={index}>
+          withBackground={section.withBackground}>
           {section.component}
         </Section>
       ))}
