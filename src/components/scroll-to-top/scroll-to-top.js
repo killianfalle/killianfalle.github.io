@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import { Context } from "../../utils/context/context";
 
 const ScrollToTop = () => {
-  const [reveal, setReveal] = useState(false);
+  const {revealScrollTop} = useContext(Context);
   const executeScroll = () => window.scrollTo(0, 0);
 
-  const scrollFunction = () => {
-    if ((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)) {
-      if(!reveal) setReveal(true)
-    } else {
-      if(!reveal) setReveal(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', scrollFunction)
-  }, []);
-
   return (
-    <div className={`scroll-to-top ${!reveal ? "hidden" : "block"}`} onClick={executeScroll}>
+    <div className={`scroll-to-top ${!revealScrollTop ? "hidden" : "block"}`} onClick={executeScroll}>
       <KeyboardDoubleArrowUpIcon className="icon" sx={{width: '3vw', height: '3vw'}}/>
     </div>
   );

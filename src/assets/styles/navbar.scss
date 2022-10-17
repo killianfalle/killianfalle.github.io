@@ -52,6 +52,10 @@
                 font-size: var(--sidebar-font-size);
                 white-space: nowrap;
                 color: var(--black);
+
+                &.active{
+                    color: var(--white);
+                }
     
                 &:hover{
                     color: var(--white);

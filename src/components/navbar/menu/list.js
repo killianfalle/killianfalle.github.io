@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from 'react';
 import { Context } from '../../../utils/context/context';
 import { sectionsList } from '../../section/list';
@@ -7,7 +5,7 @@ import { sectionsList } from '../../section/list';
 export default function MenuList({
   isExpanded,
 }) {
-    const {sectionRefs} = useContext(Context);
+    const {sectionRefs, activeSection} = useContext(Context);
     
     const executeScroll = (index) => {
         sectionRefs.current[index].scrollIntoView()
@@ -20,7 +18,7 @@ export default function MenuList({
                     {sectionsList.map((section, index) => (
                         <div
                             key={index}
-                            className="link-text nav-link"
+                            className={`link-text ${section.name === activeSection ? "active" : ""}`}
                             onClick={() => executeScroll(index)}>
                             {section.name}
                         </div>
