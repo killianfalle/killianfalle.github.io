@@ -1,5 +1,10 @@
 .section-wrapper{
-    @apply justify-center items-center flex flex-col h-screen w-full;
+    @apply  items-center flex flex-col h-screen w-full;
+    margin-top: 8vh;
+
+    &.centered{
+        @apply justify-center mt-0;
+    }
 }
 
 .salutation{
@@ -23,10 +28,10 @@
 }
 
 .section-content{
-    @apply text-base md:text-lg lg:mr-32;
+    @apply text-base md:text-lg;
 
     p{
-        @apply mb-3 text-justify;
+        @apply mb-3;
     }
 }
 

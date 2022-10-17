@@ -1,5 +1,3 @@
-import AndroidLogoSVG from "../../assets/svgs/android-logo";
-import AppleLogoSVG from "../../assets/svgs/apple-logo";
 import PrimaryText from "../../components/primary-text/primary-text";
 
 function About() {
@@ -11,7 +9,7 @@ function About() {
             </p>
             <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
-            <div className="section-content">
+            <div className="section-content lg:mr-32">
                 <p>
                     For the past <b className="font-bold">4+</b> years
                     I've experienced <b className="text-secondary">Front-End</b> and <b className="text-secondary">Back-End</b> development.
@@ -20,9 +18,7 @@ function About() {
 
                 <p>
                     I have deployed multiple mobile applications on{" "}
-                    <AppleLogoSVG className="inline -mt-0.5 md:-mt-1"/> <b>Appstore</b> and {" "}
-                    <AndroidLogoSVG className="inline -mt-0.5 md:-mt-1 md:-ml-1"/><b>Playstore</b>{" "}
-                    from scratch with different challenges due to strict requirements/compliance from those platforms. 
+                    <b>Appstore</b> and <b>Playstore</b> from scratch with different challenges due to strict requirements/compliance from those platforms. 
                 </p>
 
                 <p>
