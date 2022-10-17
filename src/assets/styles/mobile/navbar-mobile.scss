@@ -20,6 +20,8 @@
             .main-link-button{
                 transform: unset;
                 height: 5vh;
+                justify-content: space-evenly;
+                gap: 0;
 
                 .link-text{
                     @apply font-bold;
