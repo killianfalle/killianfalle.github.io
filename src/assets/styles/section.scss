@@ -3,12 +3,24 @@
 }
 
 .salutation{
-    @apply text-xl text-center;
+    @apply text-4xl text-center;
     font-family: Montserrat-Bold;
 }
 
 .headline{
-    @apply text-base text-center;
+    @apply text-center text-base -mt-2 uppercase;
+}
+
+.section-title{
+    @apply text-3xl font-bold;
+}
+
+.section-subtitle{
+    @apply font-bold text-lg -mt-3 mb-8;
+}
+
+.section-content{
+    @apply text-base;
 }
 
 @import './mobile/section-mobile.scss';

@@ -1,4 +1,5 @@
 import profile from '../../assets/images/profile.png'
+import PrimaryText from '../../components/primary-text/primary-text';
 import Section from '../../components/section/section';
 import SocialLinks from '../../components/social-links/social-links';
 
@@ -11,7 +12,8 @@ function Overview() {
             </div>
 
             <p className="salutation">
-                Hey, I'm <span className="text-secondary">Killian</span>
+                <PrimaryText>Killian</PrimaryText> Falle
+                <PrimaryText>;</PrimaryText>
             </p>
 
             <p className="headline">

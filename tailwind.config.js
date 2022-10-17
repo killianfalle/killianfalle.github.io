@@ -31,7 +31,7 @@ module.exports = {
         "2xs": "0.5vw",
         "xs": "0.75vw",
         "sm": "1vw",
-        "base": "1.25vw",
+        "base": "1.5vw",
         "lg": "2vw",
         "xl": "3vw",
         "2xl": "4vw",
