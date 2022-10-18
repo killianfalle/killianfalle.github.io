@@ -5,11 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import RouteList from "./list";
 
 import NavBar from "../components/navbar/navbar";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
+import UnderMaintenance from "../components/under-maintenance/under-maintenance";
 
 const NavigationComponent = () => {
   const renderRoutes = () => {
@@ -29,6 +29,7 @@ const NavigationComponent = () => {
 
   return (
     <React.Fragment>
+      <UnderMaintenance />
       <Toaster toastOptions={{ duration: 3000 }} position="top-right" />
       <BrowserRouter>
         <ScrollToTop />
