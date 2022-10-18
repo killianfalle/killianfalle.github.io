@@ -1,4 +1,6 @@
+import Button from "../../components/button/button";
 import PrimaryText from "../../components/primary-text/primary-text";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 function About() {
     return (
@@ -8,7 +10,7 @@ function About() {
                 About me
                 <PrimaryText className="text-lg md:text-xl">{"/>"}</PrimaryText>
             </p>
-            <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
+            <p className="section-subtitle lg:pr-40">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
             <div className="section-content lg:pr-40">
                 <p>
@@ -19,7 +21,9 @@ function About() {
 
                 <p>
                     I have deployed multiple mobile applications on{" "}
-                    <b>Appstore</b> and <b>Playstore</b> from scratch with different challenges due to strict requirements/compliance from those platforms. 
+                    <b>Appstore</b> and <b>Playstore</b> from scratch with different challenges due to strict 
+                    requirements/compliance from those platforms. I successfully created responsive websites that are fast, smooth, 
+                    and easy to use. I also make sure to follow the coding standards and best practices when developing 
                 </p>
 
                 <p>
@@ -27,9 +31,14 @@ function About() {
                 </p>
 
                 <p>
-                    Sometimes I go outside and take a 5-10 minute walk when I'm feeling stuck to help me return to my tasks with more refreshed and focused mind.
+                    Sometimes I go outside and take a 5-10 minute walk when I'm feeling stuck to help me return to my tasks 
+                    with more refreshed and focused mind.
                 </p>
             </div>
+
+            <Button position="left">
+                Check my works <KeyboardArrowRightIcon/>
+            </Button>
         </div>
     );
 }

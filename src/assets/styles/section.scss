@@ -31,10 +31,11 @@
 .salutation{
     @apply text-2xl md:text-4xl text-center;
     font-family: Montserrat-Bold;
+    margin-top: 2vh;
 }
 
 .headline{
-    @apply text-center text-lg uppercase;
+    @apply text-center text-lg md:text-xl uppercase;
     margin-top: 1.5vh;
 }
 
@@ -51,6 +52,7 @@
 .section-content{
     @apply w-full text-lg;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 
     p{
         @apply mb-3;
@@ -74,7 +76,7 @@
             }
             
             .grid-description{
-                @apply text-white;
+                @apply text-white text-lg;
                 margin-top: 3vh;
                 font-size: 2vh;
             }
