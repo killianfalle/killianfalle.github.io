@@ -30,6 +30,7 @@
 
 .under-construction{
     @apply w-full bg-red text-white text-center uppercase font-bold text-sm md:text-base;
+    position: fixed;
     z-index: 99;
 }
 
