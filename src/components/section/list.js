@@ -9,11 +9,11 @@ export const sectionsList = [
     },
     {
       name: 'Expertise',
-      withBackground: true,
       component: <Expertise />
     },
     {
       name: 'Contact',
+      withBackground: true,
       component: <Contact />
     }
   ]

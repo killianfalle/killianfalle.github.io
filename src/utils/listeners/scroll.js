@@ -15,10 +15,10 @@ const useScrollListener = () => {
         const documentScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
         sectionsList.map((section, index) => {
-            if(documentScrollTop <= (sectionRefs.current[0].offsetTop - (windowHeight / 2))){
+            if(documentScrollTop <= (sectionRefs.current[0].offsetTop - (windowHeight / 3))){
                 return setActiveSection('Overview')
             }
-            if(documentScrollTop >= (sectionRefs.current[index].offsetTop - (windowHeight / 2))){
+            if(documentScrollTop >= (sectionRefs.current[index].offsetTop - (windowHeight / 3))){
                 return setActiveSection(section.name)
             }
         });

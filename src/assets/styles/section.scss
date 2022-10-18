@@ -1,19 +1,30 @@
 .section-wrapper{
-    @apply items-center flex flex-col h-screen w-full sm:px-4 md:px-24 lg:px-36 xl:px-52;
-    padding-top: 6vh;
-
-    &.centered{
-        @apply justify-center pt-0;
-    }
+    @apply items-center justify-center flex flex-col h-screen w-full sm:px-4 md:px-10 lg:px-36 xl:px-52;
 
     &.withBackground{
-        @apply bg-secondary;
-        height: 100%;
+        @apply bg-secondary justify-start;
+        padding-top: 6vh;
         padding-bottom: 6vh;
         
         p{
             @apply text-black;
         }
+    }
+}
+
+.section-container{
+    @apply w-full;
+
+    &.left {
+        @apply flex justify-start;
+    }
+
+    &.centered{
+        @apply flex flex-col items-center
+    }
+
+    &.right {
+        @apply flex justify-end;
     }
 }
 
@@ -28,7 +39,7 @@
 }
 
 .section-title{
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl md:text-3xl font-bold flex items-baseline gap-x-1;
     margin-bottom: 1vh;
 }
 
@@ -38,12 +49,53 @@
 }
 
 .section-content{
-    @apply md:text-lg;
+    @apply md:text-lg w-full;
     margin-top: 3vh;
 
     p{
         @apply mb-3;
         line-height: 1.5;
+    }
+
+    .grid-content{
+        @apply w-full grid grid-cols-1 md:grid-cols-3 gap-2;
+
+        .grid-item{
+            @apply text-white rounded relative bg-black;
+            padding: 4vh;
+            filter: drop-shadow(-2px 2px 2px var(--secondary));
+            -webkit-filter: drop-shadow(-2px 2px 2px var(--secondary));
+            transition: 0.4s ease-in-out;
+
+            .grid-title{
+                @apply text-white font-bold text-xl;
+                @apply w-9/12 md:w-full lg:w-9/12 lg:text-lg;
+                z-index: 2;
+            }
+            
+            .grid-description{
+                @apply text-white;
+                margin-top: 3vh;
+                font-size: 2vh;
+            }
+
+            .grid-line{
+                @apply mr-1 absolute;
+                top: -1vh;
+                width: 7.5vh;
+                height: 0.5vh;
+            }
+
+            &:hover{
+                background-color: var(--white);
+                filter: drop-shadow(0px 0px 5px var(--white));
+                -webkit-filter: drop-shadow(0px 0px 5px var(--white));
+
+                .grid-title, .grid-description{
+                    @apply text-black;
+                }
+            }
+        }
     }
 }
 

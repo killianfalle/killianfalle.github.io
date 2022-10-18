@@ -5,7 +5,7 @@ import SocialLinks from '../../components/social-links/social-links';
 
 function Overview() {
     return (
-        <Section centered>
+        <Section>
             <SocialLinks />
             <div className="drop-shadow">
                 <img className="header-img" src={profile} alt="Profile"/>

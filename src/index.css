@@ -1,9 +1,12 @@
 :root{
-  --background: #100F0F;
+  --background: #1a191d;
   --primary: #F6F5F0;
   --secondary: #FEC822;
   --white: #F6F5F0;
-  --black: #20262A;
+  --black: #1a191d;
+  --web: "#48b174";
+  --mobile: "#398AB9";
+  --backend: "#f9322c";
   --sidebar-width: 4vw;
   --sidebar-font-size: 1.6vw;
 }
@@ -25,10 +28,6 @@ p {
 
 * {
   line-height: 1;
-}
-
-span{
-  line-height: 0;
 }
 
 u{

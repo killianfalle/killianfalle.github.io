@@ -2,10 +2,11 @@ import PrimaryText from "../../components/primary-text/primary-text";
 
 function Contact() {
     return (
-        <div className="w-full flex justify-start">
-            <p className="section-title">
+        <div className="section-container left">
+             <p className="section-title">
+                <PrimaryText className="text-lg md:text-xl">{"<"}</PrimaryText>
                 Contact
-                <PrimaryText className="text-4xl">.</PrimaryText>
+                <PrimaryText className="text-lg md:text-xl">{"/>"}</PrimaryText>
             </p>
         </div>
     );

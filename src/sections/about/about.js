@@ -2,14 +2,15 @@ import PrimaryText from "../../components/primary-text/primary-text";
 
 function About() {
     return (
-        <div className="w-full">
+        <div className="section-container">
             <p className="section-title">
+                <PrimaryText className="text-lg md:text-xl">{"<"}</PrimaryText>
                 About me
-                <PrimaryText className="text-4xl">.</PrimaryText>
+                <PrimaryText className="text-lg md:text-xl">{"/>"}</PrimaryText>
             </p>
             <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
-            <div className="section-content lg:mr-32">
+            <div className="section-content lg:pr-40">
                 <p>
                     For the past <b className="font-bold">4+</b> years
                     I've experienced <b className="text-secondary">Front-End</b> and <b className="text-secondary">Back-End</b> development.

@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#100F0F",
+        background: "#1a191d",
         primary: "#F6F5F0",
         secondary: "#FEC822",
         secondaryDark: "#CE4B22",
@@ -16,7 +16,7 @@ module.exports = {
         darkerGray: "#999999",
         lightGreen: "#6FCF97",
         green: "#65C18C",
-        black: "#000",
+        black: "#1a191d",
         white: "#F6F5F0",
         red: "#FC4F4F",
         yellow: "#FFE162",
@@ -25,6 +25,9 @@ module.exports = {
         mutedGray: "#606B80",
         gold: "#E78D4B",
         lightDarkGray: "#F7F7F7",
+        web: "#48b174",
+        mobile: "#398AB9",
+        backend: "#f9322c"
       },
       fontSize: {
         "3xs": "0.25vh",
