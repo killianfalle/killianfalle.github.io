@@ -49,6 +49,21 @@
     line-height: 1.5;
 }
 
+.scroll-animation{
+    @apply absolute cursor-pointer;
+    transition: 0.2s ease-in-out;
+    bottom: 3vh;
+
+    div{
+        pointer-events: none;
+    }
+
+    &:hover{
+        filter: drop-shadow(0 0 1vh var(--secondary));
+        -webkit-filter: drop-shadow(0 0 1vh var(--secondary));
+    }
+}
+
 .section-content{
     @apply w-full text-lg;
     margin-top: 3vh;
