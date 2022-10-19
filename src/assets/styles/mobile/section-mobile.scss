@@ -8,7 +8,22 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
+    .section-content {
+        margin-top: 2vh;
+        .grid-content {
+            gap: 3vh;
+            .grid-item {
+                padding: 2.5vh;
+                .grid-description {
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
     .section-content {
         font-size: 1.75vh;
         
@@ -22,12 +37,15 @@
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     .section-content {
-        .grid-content .grid-item {
-            padding: 2.5vh;
-            .grid-description {
-                font-size: 1.75vh;
+        .grid-content {
+            gap: 2vh;
+            .grid-item {
+                padding: 2.5vh;
+                .grid-description {
+                    font-size: 1.75vh;
+                }
             }
         }
     }

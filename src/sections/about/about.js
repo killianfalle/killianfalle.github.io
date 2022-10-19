@@ -10,7 +10,7 @@ function About() {
                 About me
                 <PrimaryText className="text-lg md:text-xl">{"/>"}</PrimaryText>
             </p>
-            <p className="section-subtitle lg:pr-40">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
+            <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
             <div className="section-content lg:pr-40">
                 <p>

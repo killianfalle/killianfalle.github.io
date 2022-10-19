@@ -26,7 +26,7 @@ function Expertise() {
                         </div>
                     </div>
                     <div className="grid-item backend">
-                        <h2 className="grid-title">Backend App Development</h2>
+                        <h2 className="grid-title">Backend Development</h2>
                         <div className="relative">
                             <div className="bg-backend grid-line"/>
                             <p className="grid-description">Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel.</p>

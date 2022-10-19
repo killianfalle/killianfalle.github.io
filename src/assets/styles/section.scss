@@ -45,7 +45,7 @@
 }
 
 .section-subtitle{
-    @apply font-bold text-lg md:text-xl;
+    @apply font-bold text-lg md:text-xl md:w-9/12;
     line-height: 1.5;
 }
 
@@ -60,24 +60,26 @@
     }
 
     .grid-content{
-        @apply w-full grid grid-cols-1 md:grid-cols-3 gap-2;
+        @apply w-full grid grid-cols-1 2md:grid-cols-3;
+        gap: 4vh;
 
         .grid-item{
-            @apply text-white rounded relative bg-black;
+            @apply rounded relative bg-black;
             padding: 4vh;
-            filter: drop-shadow(-2px 2px 2px var(--secondary));
-            -webkit-filter: drop-shadow(-2px 2px 2px var(--secondary));
+            filter: drop-shadow(0 0 0.25vh var(--secondary));
+            -webkit-filter: drop-shadow(0 0 0.25vh var(--secondary));
             transition: 0.4s ease-in-out;
 
             .grid-title{
                 @apply text-white font-bold text-xl;
-                @apply w-9/12 md:w-full lg:w-9/12 lg:text-lg;
+                @apply w-9/12 md:w-full 2md:w-9/12;
                 z-index: 2;
             }
             
             .grid-description{
                 @apply text-white text-lg;
-                margin-top: 3vh;
+                margin-top: 4vh;
+                padding-top: 1vh;
                 font-size: 2vh;
             }
 
