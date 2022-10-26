@@ -21,19 +21,16 @@ const SocialLinks = () => {
             className="cursor-pointer icon"
             sx={{width: '1.8vw', height: '1.8vw'}}
             onClick={() => redirectToSocial("https://www.linkedin.com/in/killianfalle")}
-
           />
           <FacebookIcon
             className="cursor-pointer icon"
             sx={{width: '1.8vw', height: '1.8vw'}}
             onClick={() => redirectToSocial("https://www.facebook.com/killianfalle")}
-
           />
           <InstagramIcon
             className="cursor-pointer icon"
             sx={{width: '1.8vw', height: '1.8vw'}}
             onClick={() => redirectToSocial("https://www.instagram.com/killianfalle")}
-
           />
         </div>
         <div className="line"/>

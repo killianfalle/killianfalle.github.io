@@ -9,7 +9,6 @@ import RouteList from "./list";
 
 import NavBar from "../components/navbar/navbar";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
-import UnderMaintenance from "../components/under-maintenance/under-maintenance";
 
 const NavigationComponent = () => {
   const renderRoutes = () => {
