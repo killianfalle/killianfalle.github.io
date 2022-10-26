@@ -145,6 +145,7 @@
 
     .icon.social{
         transition: 0.2s ease-in-out;
+        @apply text-5xl md:text-8xl;
         
         &:hover{
             color: var(--white);
@@ -155,12 +156,12 @@
 
     &.flex-center{
         @apply flex flex-row items-center justify-center w-full;
-        gap: 6vh;
+        gap: 6vw;
     }
 
     &.flex-left{
         @apply flex flex-row items-center justify-start w-full;
-        gap: 6vh;
+        gap: 6vw;
     }
 }
 

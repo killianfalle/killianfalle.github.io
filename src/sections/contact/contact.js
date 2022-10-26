@@ -22,27 +22,22 @@ function Contact() {
             <div className="section-content flex-center">
                 <GitHubIcon
                     className="cursor-pointer icon social"
-                    sx={{width: '6vh', height: '6vh'}}
                     onClick={() => redirectToSocial("https://github.com/killianfalle")}
                 />
                 <EmailIcon
                     className="cursor-pointer icon social"
-                    sx={{width: '6vh', height: '6vh'}}
                     onClick={() => redirectToSocial("https://mail.google.com/mail/?view=cm&fs=1&to=killianfalle7@gmail.com")}
                 />
                 <LinkedInIcon
                     className="cursor-pointer icon social"
-                    sx={{width: '6vh', height: '6vh'}}
                     onClick={() => redirectToSocial("https://www.linkedin.com/in/killianfalle")}
                 />
                 <FacebookIcon
                     className="cursor-pointer icon social"
-                    sx={{width: '6vh', height: '6vh'}}
                     onClick={() => redirectToSocial("https://www.facebook.com/killianfalle")}
                 />
                 <InstagramIcon
                     className="cursor-pointer icon social"
-                    sx={{width: '6vh', height: '6vh'}}
                     onClick={() => redirectToSocial("https://www.instagram.com/killianfalle")}
                 />
             </div>
