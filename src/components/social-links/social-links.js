@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 
 const SocialLinks = () => {
   const redirectToSocial = (url) => window.open(url, '_blank');
@@ -16,6 +17,11 @@ const SocialLinks = () => {
             className="cursor-pointer icon"
             sx={{width: '1.8vw', height: '1.8vw'}}
             onClick={() => redirectToSocial("https://github.com/killianfalle")}
+          />
+          <EmailIcon
+              className="cursor-pointer icon"
+              sx={{width: '1.8', height: '1.8'}}
+              onClick={() => redirectToSocial("https://mail.google.com/mail/?view=cm&fs=1&to=killianfalle7@gmail.com")}
           />
           <LinkedInIcon
             className="cursor-pointer icon"
