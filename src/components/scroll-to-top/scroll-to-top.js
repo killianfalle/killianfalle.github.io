@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { Context } from "../../utils/context/context";
 
 const ScrollToTop = () => {
@@ -8,7 +8,7 @@ const ScrollToTop = () => {
 
   return (
     <div className={`scroll-to-top ${!revealScrollTop ? "hidden" : "block"}`} onClick={executeScroll}>
-      <KeyboardDoubleArrowUpIcon className="icon" sx={{width: '3vw', height: '3vw'}}/>
+      <ArrowUpwardIcon className="icon" sx={{width: '3vw', height: '3vw'}}/>
     </div>
   );
 };
