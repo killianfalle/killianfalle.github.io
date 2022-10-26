@@ -1,36 +1,41 @@
+import { useState } from "react";
 import PrimaryText from "../../components/primary-text/primary-text";
 
 function Expertise() {
+    const [state, setState] = useState({
+        showWeb: false,
+        showMobile: false,
+        showBackend: false
+    });
+
+    const expand = (type) => {
+        setState(prevstate => ({...prevstate, [type]: !state[type]}));
+    }
+
     return (
         <div className="section-container centered">
              <p className="section-title">
-                <PrimaryText className="text-lg md:text-xl">{"<"}</PrimaryText>
+                <PrimaryText className="text-3xl md:text-5xl">{"{"}</PrimaryText>
                 Experties
-                <PrimaryText className="text-lg md:text-xl">{"/>"}</PrimaryText>
+                <PrimaryText className="text-3xl md:text-5xl">{"}"}</PrimaryText>
             </p>
 
             <div className="section-content flex justify-center items-center">
-                <div class="grid-content">
-                    <div className="grid-item web">
+                <div className="grid-content">
+                    <div className={`grid-item web ${state.showWeb ? "shown" : ""}`} onClick={() => expand('showWeb')}>
+                        <div className="bg-web grid-line"/>
                         <h2 className="grid-title">Web App Development</h2>
-                        <div className="relative">
-                            <div className="bg-web grid-line"/>
-                            <p className="grid-description">Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks.</p>
-                        </div>
+                        <p className="grid-description">Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks.</p>
                     </div>
-                    <div className="grid-item mobile">
+                    <div className={`grid-item mobile ${state.showMobile ? "shown" : ""}`} onClick={() => expand('showMobile')}>
+                        <div className="bg-mobile grid-line"/>
                         <h2 className="grid-title">Mobile App Development</h2>
-                        <div className="relative">
-                            <div className="bg-mobile grid-line"/>
-                            <p className="grid-description">Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework.</p>
-                        </div>
+                        <p className="grid-description">Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework.</p>
                     </div>
-                    <div className="grid-item backend">
+                    <div className={`grid-item backend ${state.showBackend ? "shown" : ""}`} onClick={() => expand('showBackend')}>
+                        <div className="bg-backend grid-line"/>
                         <h2 className="grid-title">Backend Development</h2>
-                        <div className="relative">
-                            <div className="bg-backend grid-line"/>
-                            <p className="grid-description">Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel.</p>
-                        </div>
+                        <p className="grid-description">Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel.</p>
                     </div>
                 </div>
             </div>

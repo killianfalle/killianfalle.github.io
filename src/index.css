@@ -1,13 +1,15 @@
 :root{
-  --background: #1a191d;
-  --primary: #F6F5F0;
-  --secondary: #FEC822;
+  --background: #F6F5F0;
+  --primary: #FEC822;
+  --light-primary: #FFE595;
+  --secondary: #302f35;
   --white: #F6F5F0;
   --black: #1a191d;
+  --gray: "#D1D1D1";
   --web: "#48b174";
   --mobile: "#398AB9";
   --backend: "#f9322c";
-  --sidebar-width: 4vw;
+  --sidebar-width: 50vh;
   --sidebar-font-size: 1.6vw;
 }
 
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-  @apply bg-background text-white m-0;
+  @apply bg-background text-secondary text-base m-0;
   font-family: Montserrat-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +33,7 @@ p {
 }
 
 u{
-  text-decoration-color: var(--secondary);
+  text-decoration-color: var(--primary);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
@@ -98,7 +100,7 @@ input[type="password"]:focus-within ~ label,
 input[type="email"]:focus-within ~ label,
 textarea:focus-within ~ label,
 input#react-select-address-input:focus-within ~ label {
-  @apply text-secondary opacity-100;
+  @apply text-primary opacity-100;
 }
 
 input[type="range"] {
@@ -117,8 +119,8 @@ button {
 
 
 .shadow-drop{
-  filter: drop-shadow(0 0 0.25vh var(--secondary));
-  -webkit-filter: drop-shadow(0 0 0.25vh var(--secondary));
+  filter: drop-shadow(0 0 0.25vh #00000063);
+  -webkit-filter: drop-shadow(0 0 0.25vh #00000063);
 }
 
 /* remove blue outline */

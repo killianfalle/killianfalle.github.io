@@ -13,18 +13,17 @@
 }
 
 .navbar-wrapper{
-    @apply
-    flex flex-col fixed right-0 min-h-screen;
-    z-index: 98;
-    width: var(--sidebar-width);
+    @apply flex flex-col fixed right-0 min-h-screen;
+    z-index: 60;
+    width: 0vh;
 }
 
 .navbar {
     @apply flex flex-col fixed right-0;
-    width: 0.4vw;
+    width: 0vw;
     min-height: 100vh;
     padding: 1rem 0;
-    background: linear-gradient(135deg, transparent 0, transparent 5vw, var(--secondary) 0, var(--secondary) 100%);
+    background: linear-gradient(100deg, transparent 0, transparent 5vw, var(--primary) 0, var(--primary) 100%);
     color: var(--primary);
     transition: 0.4s ease-in-out;
 
@@ -32,34 +31,29 @@
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        margin: 0 -1.65rem;
         overflow: hidden;
-        position: absolute;
-        right: 1.5rem;
+        padding: 6vh 6vh;
         transition: 0.3s ease-in-out;
 
         .main-link-button{
-            @apply
-            flex flex-row justify-center;
-            gap: 3.5vw;
-            height: 42vw;
-            transform: rotate(90deg);
+            @apply flex flex-col items-end h-full;
+            gap: 2.5vh;
 
             .link-text {
                 display: flex;
                 align-items: center;
                 text-decoration: none;
                 cursor: pointer;
-                font-size: var(--sidebar-font-size);
+                font-size: 5vh;
                 white-space: nowrap;
-                color: var(--black);
+                color: var(--secondary);
 
                 &.active{
                     color: var(--white);
                 }
     
                 &:hover{
-                    color: var(--white);
+                    color: var(--secondary);
                 }
             }
         }
@@ -67,6 +61,8 @@
 
     &.is_expanded {
         width: var(--sidebar-width);
+        filter: drop-shadow(0px 0px 5px #00000063);
+        -webkit-filter: drop-shadow(0px 0px 5px #00000063);
 
         .menu {
             opacity: 1;
@@ -76,12 +72,10 @@
 }
 
 #burger{
+    margin-right: 5vh;
     &.active {
-        margin-left: 1.5vw;
-        margin-top: 0.2vw;
-
         .burger-bar{
-            background-color: var(--white);
+            background-color: var(--secondary);
         }
         .burger-bar--3 {
             margin-top: -0.8px;
@@ -103,8 +97,8 @@
 
 .burger-button {
     position: relative;
-    height: 3.5vw;
-    width: 4vw;
+    height: 5.5vh;
+    width: 6vh;
     display: block;
     z-index: 999;
     border: 0;
@@ -114,12 +108,12 @@
     transition: transform .6s cubic-bezier(.165,.84,.44,1);
     
     .burger-bar {
-        background-color: var(--primary);
+        background-color: var(--secondary);
         position: absolute;
         top: 50%;
-        right: 0.5vw;
-        left: 1vw;
-        height: 0.3vw;
+        right: 1.5vh;
+        left: 1vh;
+        height: 0.35vh;
         width: auto;
         border-radius: 100px;
         margin-top: -1px;
@@ -127,8 +121,8 @@
     
     
         &.burger-bar--1 {
-            -webkit-transform: translateY(-0.6vw);
-            transform: translateY(-0.6vw);
+            -webkit-transform: translateY(-0.8vh);
+            transform: translateY(-0.8vh);
         }
     
         &.burger-bar--2 {
@@ -139,7 +133,7 @@
 
         &.burger-bar--3 {
             margin-top: 2px;
-            transform: translateY(0.6vw);
+            transform: translateY(0.8vh);
         }
     }
 

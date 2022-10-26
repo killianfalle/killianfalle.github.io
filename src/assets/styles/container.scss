@@ -1,13 +1,10 @@
-.page-wrapper{
-}
-
 .page-container{
     @apply h-full w-full;
 
     .header-img {
-        border-bottom: 1.5px solid var(--secondary);
-        filter: drop-shadow(0px 0px 1px var(--secondary));
-        -webkit-filter: drop-shadow(0px 0px 1px var(--secondary));
+        border-bottom: 1.5px solid var(--primary);
+        filter: drop-shadow(0px 0px 8px #0000008c);
+        -webkit-filter: drop-shadow(0px 0px 8px #0000008c);
         height: 35vh;
     }
 }
@@ -15,21 +12,21 @@
 .scroll-to-top{
     position: fixed; /* Fixed/sticky position */
     bottom: 2vw; /* Place the button at the bottom of the page */
-    left: 1.5vw; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
+    right: 1.5vw; /* Place the button 30px from the right */
+    z-index: 50; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    color: var(--secondary); /* Text color */
+    color: var(--black); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     border-radius: 100%; /* Rounded corners */
 
     &:hover{
-        color: var(--white);
+        color: var(--black);
     }
 }
 
 .under-construction{
-    @apply w-full bg-red text-white text-center uppercase font-bold text-sm md:text-base;
+    @apply w-full bg-red text-black text-center uppercase font-bold text-sm md:text-base;
     position: fixed;
     z-index: 99;
 }

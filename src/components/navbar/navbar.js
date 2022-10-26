@@ -13,7 +13,10 @@ export default function NavBar() {
         setExpanded={setExpanded}
       />
 
-      <MenuList isExpanded={isExpanded}/>
+      <MenuList
+        isExpanded={isExpanded}
+        setExpanded={setExpanded}
+      />
     </div>
   );
 }

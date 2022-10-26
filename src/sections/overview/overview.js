@@ -1,5 +1,4 @@
 import profile from '../../assets/images/profile.png'
-import PrimaryText from '../../components/primary-text/primary-text';
 import Section from '../../components/section/section';
 import SocialLinks from '../../components/social-links/social-links';
 import Lottie from 'react-lottie';
@@ -23,15 +22,14 @@ function Overview() {
     };
 
     return (
-        <Section>
+        <Section withBackground>
             <SocialLinks />
             <div className="drop-shadow">
                 <img className="header-img" src={profile} alt="Profile"/>
             </div>
 
             <p className="salutation">
-                <PrimaryText>Killian</PrimaryText> Falle
-                <PrimaryText>;</PrimaryText>
+                Killian Falle<span className='text-white'>;</span>
             </p>
 
             <p className="headline">

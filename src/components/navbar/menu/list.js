@@ -4,11 +4,13 @@ import { sectionsList } from '../../section/list';
 
 export default function MenuList({
   isExpanded,
+  setExpanded
 }) {
     const {sectionRefs, activeSection} = useContext(Context);
     
     const executeScroll = (index) => {
         sectionRefs.current[index].scrollIntoView()
+        setExpanded(false)
     };
 
     return (
@@ -23,15 +25,6 @@ export default function MenuList({
                             {section.name}
                         </div>
                     ))}
-                    
-                    {/* {navigationList.map((nav, index) => (
-                        <NavLink
-                            className={({ isActive }) => `link-text nav-link ${isActive ? 'active' : ''}`}
-                            key={index}
-                            to={nav.path}>
-                            {nav.name}
-                        </NavLink>
-                    ))} */}
                 </div>
             </div>
         </div>

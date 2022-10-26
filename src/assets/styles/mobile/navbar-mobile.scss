@@ -1,33 +1,21 @@
 @media (max-width: 700px) {
-    .menu-toggle-wrap {
-        @apply hidden;
-    }
-
-    .navbar-wrapper{
-        @apply w-full p-0 bottom-0;
-        min-height: 5vh;
-    }
-
     .navbar {
-        @apply w-full p-0 bottom-0;
-        min-height: 5vh;
-        background: var(--secondary);
+        background: var(--primary);
 
         .menu {
-            opacity: 1;
-            visibility: visible;
-
+            padding: 4vh 5vh;
             .main-link-button{
-                transform: unset;
-                height: 5vh;
-                justify-content: space-evenly;
-                gap: 0;
-
                 .link-text{
-                    @apply font-bold;
-                    font-size: 1.5vh;
+                    font-size: 4.5vh;
                 }
             }
         }
+
+        &.is_expanded {
+            width: 100vw;
+        }
+    }
+    #burger{
+        margin-right: 5vh;
     }
 }

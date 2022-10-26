@@ -29,7 +29,7 @@ const NavigationComponent = () => {
 
   return (
     <React.Fragment>
-      <UnderMaintenance />
+      {/* <UnderMaintenance /> */}
       <Toaster toastOptions={{ duration: 3000 }} position="top-right" />
       <BrowserRouter>
         <ScrollToTop />
