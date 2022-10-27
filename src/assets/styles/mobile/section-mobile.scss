@@ -3,20 +3,34 @@
         font-size: 1.5vh;
     }
 
-    .section-content .grid-content{
-        .grid-item{
-            height: 25vh;
-            width: 100%;
-            
-            .grid-title{
-                width: 50%;
+    .section-content {
+        .icon.social{
+            transition: 0.2s ease-in-out;
+            width: 5vh;
+            height: 5vh;
+
+            &.instagram{
+                width: 7vh;
+                height: 7vh;
+                margin-left: -1vh;
+            }
+        }
+        
+        .grid-content{
+            .grid-item{
+                height: 25vh;
+                width: 100%;
+                
+                .grid-title{
+                    width: 50%;
+                }
             }
         }
     }
 
 
     .scroll-animation{
-       bottom: 2vh;
+        bottom: 4vh;
     }
 }
 

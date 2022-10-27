@@ -1,10 +1,11 @@
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
-import "../../assets/styles/social-links.scss"
+
+import GithubLogo from '../../assets/svgs/github-logo';
+import FacebookLogo from '../../assets/svgs/facebook-logo';
+import LinkedLogo from '../../assets/svgs/linkedin-logo';
+import InstagramLogo from '../../assets/svgs/instagram-logo';
+import GmailLogo from '../../assets/svgs/gmail-logo';
 import Footer from '../footer/footer';
+import "../../assets/styles/social-links.scss"
 
 function Contact() {
     const redirectToSocial = (url) => window.open(url, '_blank');
@@ -20,24 +21,28 @@ function Contact() {
             <p className="section-subtitle text-center mt-2 mb-4">Here's how you can simply contact me.</p>
 
             <div className="section-content flex-center">
-                <GitHubIcon
+                {/* <GitHubIcon
+                    className="cursor-pointer icon social"
+                    onClick={() => redirectToSocial("https://github.com/killianfalle")}
+                /> */}
+                <GithubLogo
                     className="cursor-pointer icon social"
                     onClick={() => redirectToSocial("https://github.com/killianfalle")}
                 />
-                <EmailIcon
+                <GmailLogo
                     className="cursor-pointer icon social"
                     onClick={() => redirectToSocial("https://mail.google.com/mail/?view=cm&fs=1&to=killianfalle7@gmail.com")}
                 />
-                <LinkedInIcon
+                <LinkedLogo
                     className="cursor-pointer icon social"
                     onClick={() => redirectToSocial("https://www.linkedin.com/in/killianfalle")}
                 />
-                <FacebookIcon
+                <FacebookLogo
                     className="cursor-pointer icon social"
                     onClick={() => redirectToSocial("https://www.facebook.com/killianfalle")}
                 />
-                <InstagramIcon
-                    className="cursor-pointer icon social"
+                <InstagramLogo
+                    className="cursor-pointer icon social instagram"
                     onClick={() => redirectToSocial("https://www.instagram.com/killianfalle")}
                 />
             </div>

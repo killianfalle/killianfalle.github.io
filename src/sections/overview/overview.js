@@ -29,7 +29,7 @@ function Overview() {
             </div>
 
             <p className="salutation">
-                Killian Falle<span className='text-white'>;</span>
+                Killian Falle<span className='text-white ml-2'>;</span>
             </p>
 
             <p className="headline">

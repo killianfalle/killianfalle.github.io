@@ -37,14 +37,16 @@
 
         .main-link-button{
             @apply flex flex-col items-end h-full;
-            gap: 2.5vh;
+            gap: 2vh;
 
             .link-text {
+                transition: 0.3s ease-in-out;
+                font-family: Montserrat-Black;
                 display: flex;
                 align-items: center;
                 text-decoration: none;
                 cursor: pointer;
-                font-size: 5vh;
+                font-size: 7vh;
                 white-space: nowrap;
                 color: var(--secondary);
 
@@ -53,7 +55,7 @@
                 }
     
                 &:hover{
-                    color: var(--secondary);
+                    font-size: 7.5vh;
                 }
             }
         }
