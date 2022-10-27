@@ -50,10 +50,11 @@
 .section-title{
     @apply text-5xl md:text-7xl font-bold flex items-center gap-x-4;
     margin-bottom: 1vh;
+    font-family: Montserrat-Black;
 }
 
 .section-subtitle{
-    @apply font-bold text-lg md:text-2xl md:w-9/12;
+    @apply text-lg md:text-2xl md:w-9/12;
     line-height: 1.5;
     font-family: Montserrat-Medium;
 }

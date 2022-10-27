@@ -3,6 +3,10 @@
         font-size: 1.5vh;
     }
 
+    .section-subtitle{
+        @apply text-xl;
+    }
+
     .section-content {
         .icon.social{
             transition: 0.2s ease-in-out;
@@ -39,7 +43,7 @@
         @apply gap-x-2;
     }
     .section-content {
-        margin-top: 2vh;
+        
         .grid-content {
             gap: 3vh;
             .grid-item {
