@@ -1,5 +1,5 @@
-const InstagramLogo = ({className=""}) => (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="35px" height="35px">
+const InstagramLogo = (props) => (
+    <svg {...props} className={props.className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="35px" height="35px">
         <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/>
             <stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/>

@@ -21,10 +21,6 @@ function Contact() {
             <p className="section-subtitle text-center mt-2 mb-4">Here's how you can simply contact me.</p>
 
             <div className="section-content flex-center">
-                {/* <GitHubIcon
-                    className="cursor-pointer icon social"
-                    onClick={() => redirectToSocial("https://github.com/killianfalle")}
-                /> */}
                 <GithubLogo
                     className="cursor-pointer icon social"
                     onClick={() => redirectToSocial("https://github.com/killianfalle")}
