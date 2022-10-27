@@ -49,8 +49,8 @@
 
 .section-title{
     @apply text-5xl md:text-7xl font-bold flex items-center gap-x-4;
-    margin-bottom: 1vh;
-    font-family: Montserrat-Black;
+    margin-bottom: 1.5vh;
+    font-family: Montserrat-Bold;
 }
 
 .section-subtitle{
@@ -76,8 +76,8 @@
 
 .section-content{
     @apply w-full text-lg;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
     font-family: Montserrat-Medium;
 
     p{
@@ -146,12 +146,12 @@
 
     .icon.social{
         transition: 0.2s ease-in-out;
-        width: 7.5vh;
-        height: 7.5vh;
+        width: 6vh;
+        height: 6vh;
 
         &.instagram{
-            width: 10vh;
-            height: 10vh;
+            width: 8.2vh;
+            height: 8.2vh;
             margin-left: -1.5vh;
         }
         
