@@ -1,8 +1,18 @@
 import Button from "../../components/button/button";
 import PrimaryText from "../../components/primary-text/primary-text";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { useContext } from "react";
+import { Context } from '../../utils/context/context';
+import { sectionsList } from '../../components/section/list';
 
 function About() {
+    const {sectionRefs} = useContext(Context);
+    
+    const executeScroll = () => {
+        const sectionIndex = sectionsList.findIndex(obj => obj.name === "Projects");
+        sectionRefs.current[sectionIndex].scrollIntoView()
+    };
+
     return (
         <div className="section-container">
             <p className="section-title">
@@ -36,7 +46,7 @@ function About() {
                 </p>
             </div>
 
-            <Button position="left">
+            <Button position="left" onClick={executeScroll}>
                 Check my works <KeyboardArrowRightIcon/>
             </Button>
         </div>

@@ -86,64 +86,6 @@
         line-height: 1.5;
     }
 
-    .grid-content{
-        @apply w-full grid grid-cols-1 md:grid-cols-3;
-        gap: 2vh;
-
-        .grid-item{
-            width: 38vh;
-            @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer;
-            padding: 4vh;
-            height: 38vh;
-            background: var(--primary);
-            transition: 0.5s ease-in-out;
-
-            .grid-title{
-                @apply font-bold text-2xl md:text-xl 2md:text-2xl absolute;
-                @apply w-10/12 md:w-8/12 2md:w-7/12;
-                z-index: 2;
-                opacity: 1;
-                transition: 0.5s ease-in-out;
-            }
-
-            .grid-description{
-                @apply text-lg w-9/12 md:w-8/12 2md:w-9/12;
-                position: absolute;
-                padding-top: 1vh;
-                opacity: 0;
-                transition: 0.5s ease-in-out;
-            }
-
-            .grid-line{
-                @apply mr-1 absolute;
-                height: 1.5vh;
-                width: 8.5vh;
-                top: 20.5vh;
-                left: 4.2vh;
-                transition: 0.5s ease-in-out;
-            }
-
-            .grid-icon{
-                @apply absolute right-0 bottom-0 text-xl;
-                margin: 2vh;
-                transition: 0.5s ease-in-out;
-            }
-            
-            &.shown{
-                .grid-title{ opacity: 0 }
-                .grid-description{ opacity: 1 }
-                .grid-line{ width: 0 }
-                .grid-icon{ transform: rotate(-180deg)}
-            }
-
-            &:hover{
-                .grid-title{ 
-                    @apply  text-3xl md:text-2xl 2md:text-3xl;
-                 }
-            }
-        }
-    }
-
     .icon.social{
         transition: 0.2s ease-in-out;
         width: 6vh;
@@ -173,3 +115,5 @@
 }
 
 @import './mobile/section-mobile.scss';
+@import './section-substyles/experties.scss';
+@import './section-substyles/projects.scss';

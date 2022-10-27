@@ -2,16 +2,16 @@ import { useState } from "react";
 import PrimaryText from "../../components/primary-text/primary-text";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+const experties = ['web', 'mobile', 'backend'];
+
 function Expertise() {
-    const [state, setState] = useState({
-        showWeb: false,
-        showMobile: false,
-        showBackend: false
+    const [expand, setExpand] = useState({
+        web: false,
+        mobile: false,
+        backend: false
     });
 
-    const expand = (type) => {
-        setState(prevstate => ({...prevstate, [type]: !state[type]}));
-    }
+    const handleExpand = (type) => setExpand(prev => ({...prev, [type]: !expand[type]}));
 
     return (
         <div className="section-container centered">
@@ -22,25 +22,24 @@ function Expertise() {
             </p>
 
             <div className="section-content flex justify-center items-center">
-                <div className="grid-content">
-                    <div className={`grid-item web ${state.showWeb ? "shown" : ""}`} onClick={() => expand('showWeb')}>
-                        <div className="bg-web grid-line"/>
-                        <h2 className="grid-title">Web App Development</h2>
-                        <p className="grid-description">Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks.</p>
-                        <ArrowForwardIosIcon className="grid-icon"/>
-                    </div>
-                    <div className={`grid-item mobile ${state.showMobile ? "shown" : ""}`} onClick={() => expand('showMobile')}>
-                        <div className="bg-mobile grid-line"/>
-                        <h2 className="grid-title">Mobile App Development</h2>
-                        <p className="grid-description">Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework.</p>
-                        <ArrowForwardIosIcon className="grid-icon"/>
-                    </div>
-                    <div className={`grid-item backend ${state.showBackend ? "shown" : ""}`} onClick={() => expand('showBackend')}>
-                        <div className="bg-backend grid-line"/>
-                        <h2 className="grid-title">Backend Development</h2>
-                        <p className="grid-description">Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel.</p>
-                        <ArrowForwardIosIcon className="grid-icon"/>
-                    </div>
+                <div className="experties-content">
+                    {experties.map((item, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className={`experties-item ${item} ${expand[item] ? "shown" : ""}`}
+                                onClick={() => handleExpand(item)}>
+                                <div className={`bg-${item} experties-line`}/>
+                                <h2 className="experties-title">{item} App Development</h2>
+                                <p className="experties-description">
+                                    {item === 'web' && "Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks."}
+                                    {item === 'mobile' && "Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework."}
+                                    {item === 'backend' && "Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel."}
+                                </p>
+                                <ArrowForwardIosIcon className="experties-icon"/>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>

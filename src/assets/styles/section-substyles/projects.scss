@@ -1,0 +1,101 @@
+.projects-content{
+    @apply w-full grid grid-cols-2 md:grid-cols-3;
+    gap: 3vh;
+
+    .project-item{
+        width: 38vh;
+        @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer items-center bg-white;
+        box-shadow: 0px 0px 12px -6px var(--shadow-color);
+        padding: 4vh;
+        height: 30vh;
+        transition: 0.5s ease-in-out;
+
+        .project-title{
+            @apply text-white font-bold text-2xl md:text-xl 2md:text-2xl absolute capitalize text-center;
+            @apply w-10/12 md:w-8/12 2md:w-7/12;
+            z-index: 2;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+        }
+
+        .project-description{
+            @apply text-lg w-9/12 md:w-8/12 2md:w-9/12;
+            position: absolute;
+            padding-top: 1vh;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .project-logo{
+            @apply absolute;
+            z-index: 2;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+        }
+        
+        &.shown{
+            .project-logo{ opacity: 0 }
+            .project-description{ opacity: 1 }
+        }
+
+        &:hover{
+            transform: scale(1.035);
+
+            .project-logo{ opacity: 0 }
+            .project-description{ opacity: 1 }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .projects-content{
+        .project-item{
+            height: 25vh;
+            width: 100%;
+
+            &:hover{
+                .project-logo{ opacity: 1 }
+                .project-description{ opacity: 0 }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-content {
+        gap: 3vh;
+        .project-item {
+            height: 20vh;
+            
+            .project-description {
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .projects-content {
+        .project-item {
+            height: 15vh;
+            .project-description {
+                font-size: 1.75vh;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .projects-content {
+        .project-item {
+            padding: 2.5vh;
+            .project-description {
+                font-size: 1.75vh;
+            }
+           
+        }
+    }
+}

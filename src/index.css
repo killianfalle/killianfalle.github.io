@@ -9,6 +9,7 @@
   --web: "#48b174";
   --mobile: "#398AB9";
   --backend: "#f9322c";
+  --shadow-color: #00000063;
   --sidebar-width: 60vh;
   --sidebar-font-size: 1.6vw;
 }
@@ -119,8 +120,8 @@ button {
 
 
 .shadow-drop{
-  filter: drop-shadow(0 0 0.25vh #00000063);
-  -webkit-filter: drop-shadow(0 0 0.25vh #00000063);
+  filter: drop-shadow(0 0 0.25vh var(--shadow-color));
+  -webkit-filter: drop-shadow(0 0 0.25vh var(--shadow-color));
 }
 
 /* remove blue outline */

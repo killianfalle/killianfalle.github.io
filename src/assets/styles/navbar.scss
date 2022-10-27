@@ -63,8 +63,8 @@
 
     &.is_expanded {
         width: var(--sidebar-width);
-        filter: drop-shadow(0px 0px 5px #00000063);
-        -webkit-filter: drop-shadow(0px 0px 5px #00000063);
+        filter: drop-shadow(0px 0px 5px var(--shadow-color));
+        -webkit-filter: drop-shadow(0px 0px 5px var(--shadow-color));
 
         .menu {
             opacity: 1;

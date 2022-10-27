@@ -1,0 +1,120 @@
+.experties-content{
+    @apply w-full grid grid-cols-1 md:grid-cols-3;
+    gap: 3vh;
+
+    .experties-item{
+        width: 38vh;
+        @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer;
+        padding: 4vh;
+        height: 30vh;
+        background: var(--primary);
+        transition: 0.5s ease-in-out;
+
+        .experties-title{
+            @apply font-bold text-2xl md:text-xl 2md:text-2xl absolute capitalize;
+            @apply w-10/12 md:w-8/12 2md:w-7/12;
+            z-index: 2;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+        }
+
+        .experties-description{
+            @apply text-lg w-9/12 md:w-8/12 2md:w-9/12;
+            position: absolute;
+            padding-top: 1vh;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .experties-line{
+            @apply mr-1 absolute;
+            height: 0.6vh;
+            width: 6vh;
+            top: 10vh;
+            left: 4.2vh;
+            transition: 0.5s ease-in-out;
+        }
+
+        .experties-icon{
+            @apply absolute right-0 bottom-0 text-xl;
+            margin: 2vh;
+            transition: 0.5s ease-in-out;
+        }
+        
+        &.shown{
+            .experties-title{ opacity: 0 }
+            .experties-description{ opacity: 1 }
+            .experties-line{ width: 0 }
+            .experties-icon{ transform: rotate(-180deg)}
+        }
+
+        &:hover{
+            transform: scale(1.035);
+
+            // .experties-title{ 
+            //     @apply  text-3xl md:text-2xl 2md:text-3xl;
+            //  }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .experties-content{
+        .experties-item{
+            height: 25vh;
+            width: 100%;
+            
+            .experties-title{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .experties-content {
+        gap: 3vh;
+        .experties-item {
+            height: 25vh;
+            padding: 2.5vh;
+            
+            .experties-description {
+                font-size: 2vh;
+            }
+            .experties-line{
+                top: 7.5vh;
+                left: 2.8vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .experties-content {
+        .experties-item {
+            height: 22vh;
+            .experties-description {
+                font-size: 1.75vh;
+            }
+            .experties-line{
+                top: 6.5vh;
+                left: 2.8vh;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .experties-content {
+        .experties-item {
+            padding: 2.5vh;
+            .experties-description {
+                font-size: 1.75vh;
+            }
+           
+        }
+    }
+}

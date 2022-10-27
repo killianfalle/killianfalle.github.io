@@ -1,6 +1,7 @@
 import About from '../../sections/about/about';
 import Contact from '../../sections/contact/contact';
 import Expertise from '../../sections/expertise/expertise';
+import Projects from '../../sections/projects/projects';
 
 export const sectionsList = [
     {
@@ -10,6 +11,10 @@ export const sectionsList = [
     {
       name: 'Expertise',
       component: <Expertise />
+    },
+    {
+      name: 'Projects',
+      component: <Projects />
     },
     {
       name: 'Contact',
