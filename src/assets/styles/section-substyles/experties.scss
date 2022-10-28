@@ -1,24 +1,36 @@
-.experties-content{
+.expertise-content{
     @apply w-full grid grid-cols-1 md:grid-cols-3;
     gap: 3vh;
 
-    .experties-item{
+    .expertise-item{
         width: 38vh;
-        @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer;
+        @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer bg-primary;
+        box-shadow: 0px 0px 12px -6px var(--shadow-color);
         padding: 4vh;
         height: 30vh;
-        background: var(--primary);
         transition: 0.5s ease-in-out;
 
-        .experties-title{
-            @apply font-bold text-2xl md:text-xl 2md:text-2xl absolute capitalize;
-            @apply w-10/12 md:w-8/12 2md:w-7/12;
-            z-index: 2;
+        .web{@apply bg-web}
+        .mobile{@apply bg-mobile}
+        .backend{@apply bg-backend}
+
+        .icon-web{@apply text-black}
+        .icon-mobile{@apply text-black}
+        .icon-backend{@apply text-black}
+
+        .expertise-overview{
+            @apply flex flex-col justify-center items-center;
+            gap: 2vh;
             opacity: 1;
             transition: 0.5s ease-in-out;
         }
 
-        .experties-description{
+        .expertise-title{
+            @apply text-2xl md:text-xl 2md:text-2xl capitalize text-center;
+            font-family: Montserrat-Bold;
+        }
+
+        .expertise-description{
             @apply text-lg w-9/12 md:w-8/12 2md:w-9/12;
             position: absolute;
             padding-top: 1vh;
@@ -26,7 +38,7 @@
             transition: 0.5s ease-in-out;
         }
 
-        .experties-line{
+        .expertise-line{
             @apply mr-1 absolute;
             height: 0.6vh;
             width: 6vh;
@@ -35,23 +47,42 @@
             transition: 0.5s ease-in-out;
         }
 
-        .experties-icon{
+        .expertise-icon{
+            @apply text-xl flex flex-row justify-center;
+            top: 3vh;
+
+            span{
+                @apply bg-white rounded-full;
+                padding: 1.8vh;
+                filter: drop-shadow(0 0 0.5vh var(--white));
+                -webkit-filter: drop-shadow(0 0 0.5vh var(--white));
+
+                svg{
+                    height: 3.5vh;
+                    width: 3.5vh;
+                }
+            }
+        }
+
+        .arrow-icon{
             @apply absolute right-0 bottom-0 text-xl;
             margin: 2vh;
             transition: 0.5s ease-in-out;
         }
         
         &.shown{
-            .experties-title{ opacity: 0 }
-            .experties-description{ opacity: 1 }
-            .experties-line{ width: 0 }
-            .experties-icon{ transform: rotate(-180deg)}
+            @apply bg-white;
+            .expertise-overview{ opacity: 0 }
+            .expertise-description{ opacity: 1 }
+            .expertise-line{ width: 0 }
+            .expertise-icon{}
+            .arrow-icon{ transform: rotate(-180deg)}
         }
 
         &:hover{
             transform: scale(1.035);
 
-            // .experties-title{ 
+            // .expertise-title{ 
             //     @apply  text-3xl md:text-2xl 2md:text-3xl;
             //  }
         }
@@ -60,12 +91,12 @@
 
 
 @media (max-width: 700px) {
-    .experties-content{
-        .experties-item{
+    .expertise-content{
+        .expertise-item{
             height: 25vh;
             width: 100%;
             
-            .experties-title{
+            .expertise-title{
                 width: 50%;
             }
         }
@@ -73,16 +104,16 @@
 }
 
 @media (max-width: 500px) {
-    .experties-content {
+    .expertise-content {
         gap: 3vh;
-        .experties-item {
+        .expertise-item {
             height: 25vh;
             padding: 2.5vh;
             
-            .experties-description {
+            .expertise-description {
                 font-size: 2vh;
             }
-            .experties-line{
+            .expertise-line{
                 top: 7.5vh;
                 left: 2.8vh;
             }
@@ -91,13 +122,17 @@
 }
 
 @media (max-width: 400px) {
-    .experties-content {
-        .experties-item {
+    .expertise-content {
+        .expertise-item {
             height: 22vh;
-            .experties-description {
+            .expertise-title{
+                @apply text-xl;
+            }
+
+            .expertise-description {
                 font-size: 1.75vh;
             }
-            .experties-line{
+            .expertise-line{
                 top: 6.5vh;
                 left: 2.8vh;
             }
@@ -108,10 +143,14 @@
 
 
 @media (max-width: 350px) {
-    .experties-content {
-        .experties-item {
+    .expertise-content {
+        .expertise-item {
             padding: 2.5vh;
-            .experties-description {
+
+            .expertise-title{
+                @apply text-lg;
+            }
+            .expertise-description {
                 font-size: 1.75vh;
             }
            
