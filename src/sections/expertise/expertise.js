@@ -29,11 +29,10 @@ function Expertise() {
                     {expertise.map((item, index) => (
                         <div
                             key={index}
-                            className={`expertise-item ${item} ${expand[item] ? "shown" : ""}`}
+                            className={`expertise-item ${expand[item] ? "shown" : ""}`}
                             onClick={() => handleExpand(item)}>
-                            {/* <div className={`expertise-line ${item}`}/> */}
                             <div className="expertise-overview">
-                                <div className={`expertise-icon icon-${item}`}>
+                                <div className={`expertise-icon`}>
                                     {item === 'web' && <span><WebIcon /></span>}
                                     {item === 'mobile' && <span><PhoneIphoneIcon /></span>}
                                     {item === 'backend' && <span><StorageIcon /></span>}

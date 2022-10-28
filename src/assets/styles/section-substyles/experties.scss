@@ -10,14 +10,6 @@
         height: 30vh;
         transition: 0.5s ease-in-out;
 
-        .web{@apply bg-web}
-        .mobile{@apply bg-mobile}
-        .backend{@apply bg-backend}
-
-        .icon-web{@apply text-black}
-        .icon-mobile{@apply text-black}
-        .icon-backend{@apply text-black}
-
         .expertise-overview{
             @apply flex flex-col justify-center items-center;
             gap: 2vh;
@@ -48,7 +40,7 @@
         }
 
         .expertise-icon{
-            @apply text-xl flex flex-row justify-center;
+            @apply text-black text-xl flex flex-row justify-center;
             top: 3vh;
 
             span{
