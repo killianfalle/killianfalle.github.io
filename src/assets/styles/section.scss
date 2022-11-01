@@ -80,9 +80,12 @@
     margin-bottom: 4vh;
     font-family: Montserrat-Medium;
 
+    .text{
+        margin-bottom: 2vh;
+    }
+
     p{
         @apply text-base md:text-lg;
-        margin-bottom: 2vh;
         line-height: 1.5;
     }
 
@@ -115,5 +118,5 @@
 }
 
 @import './mobile/section-mobile.scss';
-@import './section-substyles/experties.scss';
+@import './section-substyles/expertise.scss';
 @import './section-substyles/projects.scss';

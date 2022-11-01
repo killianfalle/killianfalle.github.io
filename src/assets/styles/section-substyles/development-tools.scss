@@ -1,0 +1,33 @@
+.devtools-wrapper{
+    @apply md:absolute flex max-h-0 opacity-0 w-full justify-center;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+
+    &.shown{
+        @apply opacity-100;
+        max-height: 100%;
+        margin-top: 2vh;
+    }
+}
+
+.devtools-container{
+    width: 38vh;
+    @apply flex flex-row flex-wrap justify-center overflow-hidden md:w-full;
+    gap: 1vh 1vh;
+
+    .devtools-item{
+        @apply bg-primary rounded-full;
+        box-shadow: 0px 0px 12px -6px var(--shadow-color);
+        padding: 0.5vh 1.5vh;
+
+        p{
+            @apply text-sm font-bold;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .devtools-wrapper{
+        transition-delay: 0.2s;
+    }
+}

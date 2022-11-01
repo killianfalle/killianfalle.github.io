@@ -23,24 +23,24 @@ function About() {
             <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
             <div className="section-content lg:pr-40">
-                <p>
+                <p className="text">
                     For the past <b className="font-bold">4+</b> years
                     I've experienced <b>Front-End</b> and <b>Back-End</b> development.
                     I'm also a self-taught programmer, self-motivated and passionate for software development.
                 </p>
 
-                <p>
+                <p className="text">
                     I have deployed multiple mobile applications on{" "}
                     Appstore and Playstore from scratch with different challenges due to strict 
                     requirements/compliance from those platforms. I successfully created responsive websites that are fast, smooth, 
                     and easy to use. I also make sure to follow the coding standards and best practices when developing 
                 </p>
 
-                <p>
+                <p className="text">
                     Music helps me concentrate, focus, blocks out distractions, and even makes tedious task more enjoyable.
                 </p>
 
-                <p>
+                <p className="text">
                     Sometimes I go outside and take a 5-10 minute walk when I'm feeling stuck to help me return to my tasks 
                     with more refreshed and focused mind.
                 </p>
