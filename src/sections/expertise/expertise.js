@@ -37,7 +37,7 @@ function Expertise() {
                                     {item === 'mobile' && <span><PhoneIphoneIcon /></span>}
                                     {item === 'backend' && <span><StorageIcon /></span>}
                                 </div>
-                                <h2 className="expertise-title">{item} App Development</h2>
+                                <h2 className="expertise-title">{item} {item !== 'backend' && "App"} Development</h2>
                             </div>
                             <p className="expertise-description">
                                 {item === 'web' && "Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks."}
