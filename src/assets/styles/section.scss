@@ -11,7 +11,7 @@
 }
 
 .section-container{
-    @apply w-full;
+    @apply w-full opacity-0;
 
     &.left {
         @apply flex justify-start;
@@ -48,9 +48,13 @@
 }
 
 .section-title{
-    @apply text-5xl md:text-7xl font-bold flex items-center gap-x-4;
+    @apply text-4xl md:text-7xl font-bold;
     margin-bottom: 1.5vh;
     font-family: Montserrat-Bold;
+
+    .semicolon-text{
+        margin: 0vh 3vh;
+    }
 }
 
 .section-subtitle{
@@ -120,3 +124,4 @@
 @import './mobile/section-mobile.scss';
 @import './section-substyles/expertise.scss';
 @import './section-substyles/projects.scss';
+@import './animations/section-animations.scss';

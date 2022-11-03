@@ -5,6 +5,7 @@ import LinkedLogo from '../../assets/svgs/linkedin-logo';
 import InstagramLogo from '../../assets/svgs/instagram-logo';
 import GmailLogo from '../../assets/svgs/gmail-logo';
 import Footer from '../footer/footer';
+import SemicolonText from '../../components/semicolon-text/semicolon-text';
 import "../../assets/styles/social-links.scss"
 
 function Contact() {
@@ -13,9 +14,10 @@ function Contact() {
     return (
         <div className="section-container centered">
             <p className="section-title">
-                <span className='text-white'>{"{"}</span>
-                Let's discuss!
-                <span className='text-white'>{"}"}</span>
+                <SemicolonText
+                    text="Let's discuss!"
+                    semicolonColor="text-white"
+                />
             </p>
 
             <p className="section-subtitle text-center mt-2 mb-4">Here's how you can simply contact me.</p>

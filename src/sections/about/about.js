@@ -1,9 +1,9 @@
 import Button from "../../components/button/button";
-import PrimaryText from "../../components/primary-text/primary-text";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { useContext } from "react";
 import { Context } from '../../utils/context/context';
 import { sectionsList } from '../../components/section/list';
+import SemicolonText from "../../components/semicolon-text/semicolon-text";
 
 function About() {
     const {sectionRefs} = useContext(Context);
@@ -16,10 +16,9 @@ function About() {
     return (
         <div className="section-container">
             <p className="section-title">
-                <PrimaryText className="text-3xl md:text-5xl">{"{"}</PrimaryText>
-                About me
-                <PrimaryText className="text-3xl md:text-5xl">{"}"}</PrimaryText>
+                <SemicolonText text="About me"/>
             </p>
+            
             <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
             
             <div className="section-content lg:pr-40">

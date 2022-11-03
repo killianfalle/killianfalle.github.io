@@ -1,10 +1,10 @@
 import "../../assets/styles/section.scss";
 
-function Section({children, innerRef, withBackground = false}) {
+function Section({children, innerRef, withBackground = false, className = ""}) {
   return (
     <div
       ref={innerRef}
-      className={`section-wrapper ${withBackground ? "withBackground": ""}`}>
+      className={`section-wrapper ${withBackground ? "withBackground": ""} ${className}`}>
         {children}
     </div>
   );

@@ -1,4 +1,4 @@
-import PrimaryText from "../../components/primary-text/primary-text";
+import SemicolonText from "../../components/semicolon-text/semicolon-text";
 import hatod from "../../assets/images/projects/hatod-logo.png";
 import moneycache from "../../assets/images/projects/colored/moneycache-logo.png";
 import learnmate from "../../assets/images/projects/learnmate-logo.png";
@@ -63,9 +63,7 @@ function Projects() {
     return (
         <div className="section-container centered">
             <p className="section-title">
-                <PrimaryText className="text-3xl md:text-5xl">{"{"}</PrimaryText>
-                Projects
-                <PrimaryText className="text-3xl md:text-5xl">{"}"}</PrimaryText>
+                <SemicolonText text="Projects"/>
             </p>
 
             <p className="section-subtitle text-center mt-2 mb-4">This are the few projects that I've worked on.</p>

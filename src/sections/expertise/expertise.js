@@ -1,10 +1,10 @@
 import { useState } from "react";
-import PrimaryText from "../../components/primary-text/primary-text";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import WebIcon from '@mui/icons-material/Web';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import StorageIcon from '@mui/icons-material/Storage';
 import DevelopmentTools from "../../components/development-tools/development-tools";
+import SemicolonText from "../../components/semicolon-text/semicolon-text";
 
 const list = [
     {
@@ -38,15 +38,13 @@ function Expertise() {
     return (
         <div className="section-container centered">
              <p className="section-title">
-                <PrimaryText className="text-3xl md:text-5xl">{"{"}</PrimaryText>
-                Expertise
-                <PrimaryText className="text-3xl md:text-5xl">{"}"}</PrimaryText>
+                <SemicolonText text="Expertise"/>
             </p>
 
             <div className="section-content flex justify-center items-center">
                 <div className="expertise-content">
                     {expertise.map((item, index) => (
-                        <div key={index} className="relative">
+                        <div key={index} className="relative expertise-item-container">
                             {/* Dev content */}
                             <div
                                 className={`expertise-item ${item.expand ? "shown" : ""}`}

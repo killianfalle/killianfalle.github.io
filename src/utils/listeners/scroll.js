@@ -15,19 +15,17 @@ const useScrollListener = () => {
         const documentScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
         sectionsList.map((section, index) => {
-            if(documentScrollTop <= (sectionRefs.current[0].offsetTop - (windowHeight / 3))){
+            if(documentScrollTop <= (sectionRefs.current[0].offsetTop - (windowHeight / 2.5)))
                 return setActiveSection('Overview')
-            }
-            if(documentScrollTop >= (sectionRefs.current[index].offsetTop - (windowHeight / 3))){
+
+            if(documentScrollTop >= (sectionRefs.current[index].offsetTop - (windowHeight / 2.5)))
                 return setActiveSection(section.name)
-            }
         });
 
-        if (documentScrollTop > 500) {
+        if (documentScrollTop > 500)
             if(!revealScrollTop) setRevealScrollTop(true)
-        } else {
+        else
             if(!revealScrollTop) setRevealScrollTop(false)
-        }
     }
 
     useEffect(() => {

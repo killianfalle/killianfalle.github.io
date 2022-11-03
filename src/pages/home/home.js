@@ -5,7 +5,12 @@ import { useContext } from 'react';
 import { Context } from '../../utils/context/context';
 
 function Home() {
-  const {sectionRefs} = useContext(Context);
+  const {sectionRefs, activeSection} = useContext(Context);
+
+  const handleAddRef = (element) => {
+    if(sectionsList.length > sectionRefs.current.length)
+      sectionRefs.current.push(element)
+  }
 
   return (
     <div className="page-container">
@@ -15,7 +20,8 @@ function Home() {
       {sectionsList.map((section, index) => (
         <Section
           key={index}
-          innerRef={(element) => sectionRefs.current.push(element)}
+          className={activeSection === section.name ? "active" : ""}
+          innerRef={(element) => handleAddRef(element)}
           withBackground={section.withBackground}>
           {section.component}
         </Section>
