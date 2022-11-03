@@ -13,15 +13,14 @@ function Contact() {
 
     return (
         <div className="section-container centered">
-            <p className="section-title">
+            <div className="section-title">
                 <SemicolonText
                     text="Let's discuss!"
                     semicolonColor="text-white"
                 />
-            </p>
+            </div>
 
             <p className="section-subtitle text-center mt-2 mb-4">Here's how you can simply contact me.</p>
-
             <div className="section-content flex-center">
                 <GithubLogo
                     className="cursor-pointer icon social"

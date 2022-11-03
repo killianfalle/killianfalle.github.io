@@ -37,9 +37,9 @@ function Expertise() {
 
     return (
         <div className="section-container centered">
-             <p className="section-title">
+            <div className="section-title">
                 <SemicolonText text="Expertise"/>
-            </p>
+            </div>
 
             <div className="section-content flex justify-center items-center">
                 <div className="expertise-content">

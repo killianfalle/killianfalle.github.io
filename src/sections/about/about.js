@@ -15,12 +15,11 @@ function About() {
 
     return (
         <div className="section-container">
-            <p className="section-title">
+            <div className="section-title">
                 <SemicolonText text="About me"/>
-            </p>
+            </div>
             
             <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
-            
             <div className="section-content lg:pr-40">
                 <p className="text">
                     For the past <b className="font-bold">4+</b> years

@@ -7,7 +7,7 @@ const SemicolonText = ({text, semicolonColor = "text-primary"}) => {
     <div className="flex flex-row">
       <div className="relative flex flex-row items-center">
         <span className={`semicolon left ${semicolonColor}`}>{"{"}</span>
-          <span className="semicolon-text">{text}</span>
+          <p className="semicolon-text">{text}</p>
         <span className={`semicolon right ${semicolonColor}`}>{"}"}</span>
       </div>
     </div>

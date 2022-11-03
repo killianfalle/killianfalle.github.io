@@ -62,9 +62,9 @@ function Projects() {
 
     return (
         <div className="section-container centered">
-            <p className="section-title">
+            <div className="section-title">
                 <SemicolonText text="Projects"/>
-            </p>
+            </div>
 
             <p className="section-subtitle text-center mt-2 mb-4">This are the few projects that I've worked on.</p>
             <div className="section-content flex justify-center items-center">
