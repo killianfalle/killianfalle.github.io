@@ -31,7 +31,7 @@ function About() {
                     I have deployed multiple mobile applications on{" "}
                     Appstore and Playstore from scratch with different challenges due to strict 
                     requirements/compliance from those platforms. I successfully created responsive websites that are fast, smooth, 
-                    and easy to use. I also make sure to follow the coding standards and best practices when developing 
+                    and easy to use. I also make sure to follow the coding standards and best practices when developing.
                 </p>
 
                 <p className="text">

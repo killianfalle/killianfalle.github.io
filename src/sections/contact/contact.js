@@ -1,4 +1,3 @@
-
 import GithubLogo from '../../assets/svgs/github-logo';
 import FacebookLogo from '../../assets/svgs/facebook-logo';
 import LinkedLogo from '../../assets/svgs/linkedin-logo';

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 const SemicolonText = ({text, semicolonColor = "text-primary"}) => {
