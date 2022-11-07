@@ -23,9 +23,9 @@ const useScrollListener = () => {
         });
 
         if (documentScrollTop > 500)
-            if(!revealScrollTop) setRevealScrollTop(true)
+            setRevealScrollTop(revealScrollTop ? false : true)
         else
-            if(!revealScrollTop) setRevealScrollTop(false)
+            setRevealScrollTop(!revealScrollTop ? false : true)
     }
 
     useEffect(() => {
