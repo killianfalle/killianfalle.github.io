@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc3f52bf.css",
-    "main.js": "/static/js/main.abe0b2da.js",
+    "main.js": "/static/js/main.be9417bc.js",
     "static/js/787.bff50e23.chunk.js": "/static/js/787.bff50e23.chunk.js",
     "static/media/Montserrat-SemiBoldItalic.ttf": "/static/media/Montserrat-SemiBoldItalic.a8c8285681c31cae8e5d.ttf",
     "static/media/Montserrat-LightItalic.ttf": "/static/media/Montserrat-LightItalic.57ae4565eaf9e1fc53ba.ttf",
@@ -20,11 +20,11 @@
     "static/media/hatod-logo.png": "/static/media/hatod-logo.cae5ca1b8110204e46ea.png",
     "index.html": "/index.html",
     "main.cc3f52bf.css.map": "/static/css/main.cc3f52bf.css.map",
-    "main.abe0b2da.js.map": "/static/js/main.abe0b2da.js.map",
+    "main.be9417bc.js.map": "/static/js/main.be9417bc.js.map",
     "787.bff50e23.chunk.js.map": "/static/js/787.bff50e23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc3f52bf.css",
-    "static/js/main.abe0b2da.js"
+    "static/js/main.be9417bc.js"
   ]
 }
