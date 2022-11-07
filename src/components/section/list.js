@@ -5,7 +5,7 @@ import Projects from '../../sections/projects/projects';
 
 export const sectionsList = [
     {
-      name: 'About',
+      name: 'About me',
       component: <About />
     },
     {
