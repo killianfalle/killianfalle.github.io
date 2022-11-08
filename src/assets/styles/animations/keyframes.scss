@@ -92,3 +92,58 @@
         opacity: 1;
     }
 }
+
+@keyframes shapeWidth {
+    from {
+        transform: skew(0deg, 25deg);
+        width: 0%;
+    }
+  
+    50% {
+        transform: skew(0deg, 25deg);
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+        transform: skew(0deg, -25deg);
+    }
+}
+
+@keyframes profileAnimation {
+    from {
+        bottom: -2vh;
+        opacity: 0;
+    }
+  
+    to {
+        bottom: -9.7vh;
+        opacity: 1;
+    }
+}
+
+
+@keyframes profileAnimationMobile {
+    from {
+        bottom: -2vw;
+        opacity: 0;
+    }
+  
+    to {
+        bottom: -13.7vw;
+        opacity: 1;
+    }
+}
+
+
+@keyframes profileAnimationMobileSM {
+    from {
+        bottom: -2vw;
+        opacity: 0;
+    }
+  
+    to {
+        bottom: -14.7vw;
+        opacity: 1;
+    }
+}

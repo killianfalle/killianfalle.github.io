@@ -2,10 +2,9 @@
     @apply h-full w-full;
 
     .header-img {
-        border-bottom: 1.5px solid var(--primary);
         filter: drop-shadow(0px 0px 8px #0000008c);
         -webkit-filter: drop-shadow(0px 0px 8px #0000008c);
-        height: 35vh;
+        height: 40vh;
     }
 }
 

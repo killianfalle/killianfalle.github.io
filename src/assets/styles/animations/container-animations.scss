@@ -1,7 +1,29 @@
 .page-container{
+    .overview-shape{
+        position: absolute;
+        top: 32vh;
+        background-color: var(--white);
+        width: 65%;
+        height: 20%;
+        transform: skew(0deg, -25deg);
+        animation: shapeWidth 2s ease-in-out;
+    }
+
     .header-img {
         position: relative;
-        animation: bottomToTop 2s ease-in-out;
+        position: absolute;
+        bottom: -9.7vh;
+        animation: profileAnimation 2s ease-in-out;
+
+        @media (max-width: 700px) {
+            bottom: -13.7vw;
+            animation: profileAnimationMobile 2s ease-in-out;
+        }
+
+        @media (max-width: 320px) {
+            bottom: -14.7vw;
+            animation: profileAnimationMobileSM 2s ease-in-out;
+        }
     }
 
     .salutation-name {

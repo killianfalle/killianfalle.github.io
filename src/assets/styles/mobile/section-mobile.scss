@@ -7,6 +7,10 @@
         @apply text-xl;
     }
 
+    .salutation{
+        font-size: 8.5vh;
+    }
+
     .section-content {
         .icon.social{
             transition: 0.2s ease-in-out;
@@ -30,9 +34,17 @@
     .section-title{
         @apply gap-x-2;
     }
+
+    .salutation{
+        font-size: 6.5vh;
+    }
 }
 
 @media (max-width: 400px) {
+    .salutation{
+        @apply text-7xl;
+    }
+
     .section-content {
         font-size: 1.75vh;
     }
@@ -41,4 +53,7 @@
 
 
 @media (max-width: 350px) {
+    .salutation{
+        @apply text-6xl;
+    }
 }

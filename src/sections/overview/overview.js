@@ -24,18 +24,23 @@ function Overview() {
     return (
         <Section withBackground>
             <SocialLinks />
-            <div className="drop-shadow">
-                <img className="header-img" src={profile} alt="Profile"/>
+
+            <div className="overview-shape"/>
+
+            <div className="relative">
+                <div className="drop-shadow flex justify-center h-full">
+                    <img className="header-img" src={profile} alt="Profile"/>
+                </div>
+                <p className="salutation">
+                    <span className="salutation-name">Killian Falle</span>
+                    <span className="salutation-semicolon">;</span>
+                </p>
+
+                <p className="headline">
+                    Web and Mobile Application Developer
+                </p>
             </div>
 
-            <p className="salutation">
-                <span className="salutation-name">Killian Falle</span>
-                <span className="salutation-semicolon">;</span>
-            </p>
-
-            <p className="headline">
-                Web and Mobile Application Developer
-            </p>
 
             <div className='shadow-drop scroll-animation' onClick={executeScroll}>
                 <Lottie 
