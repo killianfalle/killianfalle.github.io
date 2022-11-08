@@ -41,6 +41,10 @@
     margin-top: 2vh;
 }
 
+.salutation-semicolon{
+    @apply text-white ml-2;
+}
+
 .headline{
     @apply text-center text-lg uppercase;
     font-family: Montserrat-Medium;

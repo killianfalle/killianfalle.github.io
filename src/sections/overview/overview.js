@@ -29,7 +29,8 @@ function Overview() {
             </div>
 
             <p className="salutation">
-                Killian Falle<span className='text-white ml-2'>;</span>
+                <span className="salutation-name">Killian Falle</span>
+                <span className="salutation-semicolon">;</span>
             </p>
 
             <p className="headline">

@@ -1,0 +1,23 @@
+.page-container{
+    .header-img {
+        position: relative;
+        animation: bottomToTop 2s ease-in-out;
+    }
+
+    .salutation-name {
+        position: relative;
+        animation: rightToLeft 2s ease-in-out;
+    }
+
+    .salutation-semicolon {
+        position: relative;
+        animation: leftToRightMiddle 2s ease-in-out;
+    }
+
+    .headline {
+        position: relative;
+        animation: topToBottomMiddle 2s ease-in-out;
+    }
+}
+
+@import './keyframes.scss';

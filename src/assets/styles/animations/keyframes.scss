@@ -10,3 +10,85 @@
         opacity: 1;
     }
 }
+
+@keyframes rightToLeft {
+    from {
+        right: -4vh;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes leftToRight {
+    from {
+        left: -4vh;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes bottomToTop {
+    from {
+        bottom: -4vh;
+        opacity: 0;
+    }
+  
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes topToBottom {
+    from {
+        top: -4vh;
+        opacity: 0;
+    }
+  
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes topToBottomMiddle {
+    from {
+        top: -4vh;
+        opacity: 0;
+    }
+  
+    85% {
+        top: -4vh;
+        opacity: 0;
+    }
+  
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes leftToRightMiddle {
+    from {
+        left: -2vh;
+        opacity: 0;
+    }
+  
+    65% {
+        left: -2vh;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
