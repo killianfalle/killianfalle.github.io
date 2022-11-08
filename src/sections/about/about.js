@@ -9,7 +9,7 @@ function About() {
     const {sectionRefs} = useContext(Context);
     
     const executeScroll = () => {
-        const sectionIndex = sectionsList.findIndex(obj => obj.name === "Projects");
+        const sectionIndex = sectionsList.findIndex(obj => obj.name === "Expertise");
         sectionRefs.current[sectionIndex].scrollIntoView()
     };
 
@@ -45,7 +45,7 @@ function About() {
             </div>
 
             <Button position="left" onClick={executeScroll}>
-                Check my works <KeyboardArrowRightIcon/>
+                My Expertise <KeyboardArrowRightIcon/>
             </Button>
         </div>
     );

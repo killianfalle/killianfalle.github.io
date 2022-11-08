@@ -94,7 +94,6 @@
     }
 
     .icon.social{
-        transition: 0.2s ease-in-out;
         width: 6vh;
         height: 6vh;
 
@@ -102,11 +101,6 @@
             width: 8.2vh;
             height: 8.2vh;
             margin-left: -1.5vh;
-        }
-        
-        &:hover{
-            filter: brightness(0) invert(1) drop-shadow(0px 0px 5px var(--white));
-            -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 5px var(--white));
         }
     }
 

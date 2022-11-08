@@ -1,9 +1,10 @@
+
 .section-container{
     transition: 0.3s ease-in-out;
 
     // General Section
     .section-title .semicolon{
-        transition: 0.5s ease-in-out;
+        transition: 1s ease-in-out;
         @apply opacity-0 absolute text-3xl md:text-5xl;
 
         &.left{left: -3vh}
@@ -73,5 +74,13 @@
             opacity: 1;
             margin-top: 0;
         }
+
+        .button-cta {
+            position: relative;
+            animation-duration: 1s;
+            animation-name: scaleIn;
+        }
     }
 }
+
+@import './keyframes.scss';

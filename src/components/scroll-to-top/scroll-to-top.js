@@ -6,8 +6,6 @@ const ScrollToTop = () => {
   const {revealScrollTop} = useContext(Context);
   const executeScroll = () => window.scrollTo(0, 0);
 
-  console.log(revealScrollTop)
-
   return (
     <div className={`scroll-to-top ${!revealScrollTop ? "hidden" : "block"}`} onClick={executeScroll}>
       <ArrowUpwardIcon className="icon" sx={{width: '3vw', height: '3vw'}}/>
