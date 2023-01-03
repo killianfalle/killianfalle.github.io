@@ -21,28 +21,28 @@ function Parallax() {
 
       <div
         class="parallax"
-        style={{right: '20vw', transform: `translateY(${scrollY * 0.02}vw)`}}
+        style={{right: '15vw', transform: `translateY(${scrollY * 0.02}vw)`}}
       >
         <div class="line"/>
       </div>
 
       <div
         class="parallax"
-        style={{right: '20vw', marginTop: '1.5vw', transform: `translateY(${scrollY * 0.02}vw)`}}
+        style={{right: '15vw', marginTop: '1.5vw', transform: `translateY(${scrollY * 0.02}vw)`}}
       >
         <div class="line"/>
       </div>
 
       <div
         class="parallax"
-        style={{right: '30vw', transform: `translateY(${scrollY * 0.012}vw)`}}
+        style={{right: '25vw', transform: `translateY(${scrollY * 0.012}vw)`}}
       >
         <div class="circle"/>
       </div>
 
       <div
         class="parallax"
-        style={{right: '35vw', transform: `translateY(${scrollY * 0.028}vw)`}}
+        style={{right: '30vw', transform: `translateY(${scrollY * 0.028}vw)`}}
       >
         <div class="parallelogram"/>
       </div>
