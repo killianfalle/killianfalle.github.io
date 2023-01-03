@@ -1,0 +1,53 @@
+.diamond-square {
+    width: 0;
+    opacity: 0.6;
+    height: 0;
+    border: 1vw solid transparent;
+    border-bottom-color: var(--primary);
+    position: relative;
+    top: -1vw;
+  }
+
+.diamond-square:after {
+    content: '';
+    position: absolute;
+    left: -1vw;
+    top: 1vw;
+    width: 0;
+    height: 0;
+    border: 1vw solid transparent;
+    border-top-color: var(--primary);
+}
+
+
+.parallelogram {
+    width: 2vw;
+    opacity: 0.6;
+    height: 2vw;
+    transform: skew(20deg);
+    background: var(--primary);
+}
+
+.circle {
+    opacity: 0.6;
+    width: 2vw;
+    height: 2vw;
+    background: var(--primary);
+    border-radius: 50%
+}
+
+.line {
+    opacity: 0.6;
+    width: 4vw;
+    height: 0.3vw;
+    background: var(--primary);
+    transform: rotate(140deg);
+}
+
+.line-2 {
+    opacity: 0.6;
+    width: 4vw;
+    height: 0.3vw;
+    background: var(--primary);
+    transform: rotate(80deg);
+}

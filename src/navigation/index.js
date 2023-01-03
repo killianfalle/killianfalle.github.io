@@ -9,6 +9,7 @@ import RouteList from "./list";
 
 import NavBar from "../components/navbar/navbar";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
+import Parallax from "../components/parallax/parallax";
 
 const NavigationComponent = () => {
   const renderRoutes = () => {
@@ -31,6 +32,7 @@ const NavigationComponent = () => {
       {/* <UnderMaintenance /> */}
       <Toaster toastOptions={{ duration: 3000 }} position="top-right" />
       <BrowserRouter>
+        <Parallax/>
         <ScrollToTop />
         <NavBar />
         <Routes>
