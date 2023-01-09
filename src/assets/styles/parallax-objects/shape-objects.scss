@@ -1,6 +1,6 @@
 .parallelogram {
-    width: 7vh;
     opacity: 0.6;
+    width: 7vh;
     height: 7vh;
     transform: skew(20deg);
     background: var(--primary);
@@ -10,22 +10,24 @@
     opacity: 0.6;
     width: 7vh;
     height: 7vh;
-    background: var(--primary);
     border-radius: 50%;
+    background: var(--primary);
 }
 
 .line {
     opacity: 0.6;
     width: 10vh;
     height: 0.6vh;
-    background: var(--primary);
     transform: rotate(140deg);
+    background: var(--primary);
 }
 
 .line-2 {
     opacity: 0.6;
     width: 10vh;
     height: 0.6vh;
-    background: var(--primary);
     transform: rotate(80deg);
+    background: var(--primary);
 }
+
+@import '../mobile/shape-objects-mobile.scss';
