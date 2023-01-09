@@ -28,7 +28,7 @@ function Parallax() {
 
       <div
         class="parallax"
-        style={{right: '15vw', marginTop: '1.5vw', transform: `translateY(${scrollY * 0.02}vw)`}}
+        style={{right: '15vw', marginTop: '1.7vh', transform: `translateY(${scrollY * 0.02}vw)`}}
       >
         <div class="line"/>
       </div>
@@ -49,13 +49,13 @@ function Parallax() {
 
       <div
         class="parallax"
-        style={{left: '20vw', transform: `translateY(${scrollY * 0.025}vw)`}}
+        style={{left: '22vw', transform: `translateY(${scrollY * 0.028}vw)`}}
       >
         <div class="line-2"/>
       </div>
       <div
         class="parallax"
-        style={{left: '20vw', marginLeft: '1vw',transform: `translateY(${scrollY * 0.025}vw)`}}
+        style={{left: '22vw', marginLeft: '1.7vh',transform: `translateY(${scrollY * 0.028}vw)`}}
       >
         <div class="line-2"/>
       </div>
