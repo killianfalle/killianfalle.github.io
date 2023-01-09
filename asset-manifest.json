@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d36f963.css",
-    "main.js": "/static/js/main.2330237f.js",
+    "main.css": "/static/css/main.7d945c12.css",
+    "main.js": "/static/js/main.50034f91.js",
     "static/js/787.bff50e23.chunk.js": "/static/js/787.bff50e23.chunk.js",
     "static/media/Montserrat-SemiBoldItalic.ttf": "/static/media/Montserrat-SemiBoldItalic.a8c8285681c31cae8e5d.ttf",
     "static/media/Montserrat-LightItalic.ttf": "/static/media/Montserrat-LightItalic.57ae4565eaf9e1fc53ba.ttf",
@@ -19,12 +19,12 @@
     "static/media/learnmate-logo.png": "/static/media/learnmate-logo.37649cb79827740a3421.png",
     "static/media/hatod-logo.png": "/static/media/hatod-logo.cae5ca1b8110204e46ea.png",
     "index.html": "/index.html",
-    "main.3d36f963.css.map": "/static/css/main.3d36f963.css.map",
-    "main.2330237f.js.map": "/static/js/main.2330237f.js.map",
+    "main.7d945c12.css.map": "/static/css/main.7d945c12.css.map",
+    "main.50034f91.js.map": "/static/js/main.50034f91.js.map",
     "787.bff50e23.chunk.js.map": "/static/js/787.bff50e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d36f963.css",
-    "static/js/main.2330237f.js"
+    "static/css/main.7d945c12.css",
+    "static/js/main.50034f91.js"
   ]
 }
