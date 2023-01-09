@@ -19,28 +19,24 @@ function About() {
                 <SemicolonText text="About me"/>
             </div>
             
-            <p className="section-subtitle">I'm an experienced Mobile and Web developer based in the Philippines 🇵🇭</p>
+            <p className="section-subtitle">Experienced Mobile and Web Developer based in the Philippines 🇵🇭</p>
             <div className="section-content lg:pr-40">
                 <p className="text">
-                    For the past <b className="font-bold">4+</b> years
-                    I've experienced <b>Front-End</b> and <b>Back-End</b> development.
-                    I'm also a self-taught programmer, self-motivated and passionate for software development.
+                    Over the past <b className="font-bold">4+</b> years
+                    I have gained experience in both <b>front-end</b> and <b>back-end</b> development.
+                    As a self-taught programmer, I am self-motivated and passionate about software development.
                 </p>
 
                 <p className="text">
-                    I have deployed multiple mobile applications on{" "}
-                    Appstore and Playstore from scratch with different challenges due to strict 
-                    requirements/compliance from those platforms. I successfully created responsive websites that are fast, smooth, 
-                    and easy to use. I also make sure to follow the coding standards and best practices when developing.
+                    I have successfully deployed multiple mobile applications on the App Store and Play Store from scratch, 
+                    overcoming strict requirements and compliance challenges. In addition, 
+                    I have created responsive websites that are fast, smooth, and easy to use, always ensuring that 
+                    I follow coding standards and best practices.
                 </p>
 
                 <p className="text">
-                    Music helps me concentrate, focus, blocks out distractions, and even makes tedious task more enjoyable.
-                </p>
-
-                <p className="text">
-                    Sometimes I go outside and take a 5-10 minute walk when I'm feeling stuck to help me return to my tasks 
-                    with more refreshed and focused mind.
+                    Music helps me concentrate and focus, blocking out distractions and making tedious tasks more enjoyable. 
+                    When I'm feeling stuck, I sometimes take a 5-10 minute walk outside to return to my tasks with a refreshed and focused mind.
                 </p>
             </div>
 
