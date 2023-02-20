@@ -25,6 +25,7 @@ function Overview() {
         <Section withBackground>
             <SocialLinks />
 
+            <div className="overview-shape-shadow"/>
             <div className="overview-shape"/>
 
             <div className="relative">
