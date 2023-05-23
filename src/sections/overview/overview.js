@@ -1,10 +1,10 @@
-import profile from '../../assets/images/profile.png'
-import Section from '../../components/section/section';
-import SocialLinks from '../../components/social-links/social-links';
-import Lottie from 'react-lottie';
-import { Context } from '../../utils/context/context';
-import scrollDown from '../../assets/lottie/scroll-down.json';
-import { useContext } from 'react';
+import profile from "../../assets/images/profile.png"
+import Section from "../../components/section/section";
+import SocialLinks from "../../components/social-links/social-links";
+import Lottie from "react-lottie";
+import { Context } from "../../utils/context/context";
+import scrollDown from "../../assets/lottie/scroll-down.json";
+import { useContext } from "react";
 
 function Overview() {
     const {sectionRefs} = useContext(Context);
@@ -43,11 +43,11 @@ function Overview() {
             </div>
 
 
-            <div className='shadow-drop scroll-animation' onClick={executeScroll}>
+            <div className="shadow-drop scroll-animation" onClick={executeScroll}>
                 <Lottie 
                     options={defaultOptions}
-                    height={'10vh'}
-                    width={'10vh'}
+                    height={"10vh"}
+                    width={"10vh"}
                 />
             </div>
         </Section>

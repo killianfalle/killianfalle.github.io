@@ -1,9 +1,8 @@
-import Button from "../../components/button/button";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { useContext } from "react";
 import { Context } from '../../utils/context/context';
 import { sectionsList } from '../../components/section/list';
 import SemicolonText from "../../components/semicolon-text/semicolon-text";
+import TechStacks from "../../components/tech-stacks/tech-stacks";
 
 function About() {
     const {sectionRefs} = useContext(Context);
@@ -40,9 +39,7 @@ function About() {
                 </p>
             </div>
 
-            <Button position="left" onClick={executeScroll}>
-                My Expertise <KeyboardArrowRightIcon/>
-            </Button>
+            <TechStacks />
         </div>
     );
 }

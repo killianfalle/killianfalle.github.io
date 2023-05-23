@@ -1,0 +1,15 @@
+.title{
+    @apply text-xl font-bold;
+}
+
+.stacks-wrapper{
+    @apply flex flex-row-reverse items-center justify-start gap-5 sm:mr-4 md:mr-6 lg:mr-44 xl:mr-48;
+}
+
+.stacks-container{
+    @apply flex flex-row-reverse items-center justify-center gap-5;
+}
+
+.stacks-divider{
+    @apply text-xl text-black;
+}
