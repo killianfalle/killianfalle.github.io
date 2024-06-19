@@ -21,7 +21,7 @@ function About() {
             <p className="section-subtitle">Experienced Mobile and Web Developer based in the Philippines 🇵🇭</p>
             <div className="section-content lg:pr-40">
                 <p className="text">
-                    Over the past <b className="font-bold">4+</b> years
+                    Over the past <b className="font-bold">5+</b> years
                     I have gained experience in both <b>front-end</b> and <b>back-end</b> development.
                     As a self-taught programmer, I am self-motivated and passionate about software development.
                 </p>
@@ -34,8 +34,8 @@ function About() {
                 </p>
 
                 <p className="text">
-                    Music helps me concentrate and focus, blocking out distractions and making tedious tasks more enjoyable. 
-                    When I'm feeling stuck, I sometimes take a 5-10 minute walk outside to return to my tasks with a refreshed and focused mind.
+                    I transitioned to iOS development, where I continue to leverage my skills and experience to create high-quality mobile applications. 
+                    This new role has allowed me to further specialize and contribute to innovative projects.
                 </p>
             </div>
 

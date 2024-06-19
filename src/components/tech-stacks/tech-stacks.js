@@ -11,6 +11,8 @@ import IonicLogo from "../../assets/svgs/ionic-logo";
 import FirebaseLogo from "../../assets/svgs/firebase-logo";
 import HtmlLogo from "../../assets/svgs/html-logo";
 import CssLogo from "../../assets/svgs/css-logo";
+import SwiftLogoSVG from "../../assets/svgs/swift-logo";
+import UIKitLogo from "../../assets/svgs/uikit-logo";
 
 const TechStacks = () => {
   return (
@@ -28,6 +30,8 @@ const TechStacks = () => {
             <HtmlLogo />
             <CssLogo />
             <TailwindLogo />
+            <SwiftLogoSVG />
+            <UIKitLogo />
         </div>
     </div>
   );

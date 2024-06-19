@@ -1,5 +1,5 @@
 import SemicolonText from "../../components/semicolon-text/semicolon-text";
-import hatod from "../../assets/images/projects/hatod-logo.png";
+import conversionCow from "../../assets/images/projects/colored/conversioncow-logo.png";
 import moneycache from "../../assets/images/projects/colored/moneycache-logo.png";
 import learnmate from "../../assets/images/projects/learnmate-logo.png";
 import jiffi from "../../assets/images/projects/jiffi-logo.png";
@@ -7,14 +7,6 @@ import estiie from "../../assets/images/projects/estiie-logo.png";
 import protrainer from "../../assets/images/projects/colored/protrainer-logo.png";
 
 const projects = [
-    {
-        title: "Hatod PH",
-        url: "https://www.hatod.com.ph/",
-        description: "HATOD aims to be the leading food delivery service in Northern Mindanao by 2025, providing convenience and opportunities to local industries. ",
-        backgroundColor: "#f36e23",
-        logo: hatod,
-        className: "p-6 2md:p-24"
-    },
     {
         title: "Learnmate",
         url: "https://learnmate.com.au/",
@@ -54,8 +46,17 @@ const projects = [
         backgroundColor: "#ae1619",
         logo: protrainer,
         className: "p-3 2md:p-16"
-    }
+    },
+    {
+        title: "ConversionCow",
+        url: "https://www.conversioncow.com/",
+        description: "ConversionCow is a website plugin that displays social proofs & call-to-actions to help you build trust faster and get leads quicker!",
+        backgroundColor: "#28265B",
+        logo: conversionCow,
+        className: "p-6 2md:p-2"
+    },
 ]
+
 
 function Projects() {
     const redirectToSocial = (url) => window.open(url, '_blank');

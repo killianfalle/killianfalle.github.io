@@ -1,0 +1,18 @@
+
+@media (max-width: 700px) {
+    .title{
+        @apply text-2xl font-bold;
+    }
+    
+    .stacks-wrapper{
+        @apply flex flex-col items-center justify-start gap-5 sm:mr-4 md:mr-6 lg:mr-44 xl:mr-48;
+    }
+    
+    .stacks-container{
+        @apply flex-wrap;
+    }
+    
+    .stacks-divider{
+        @apply hidden;
+    }
+}

@@ -15,7 +15,7 @@ const list = [
     {
         name: 'mobile',
         expand: false,
-        tools: ['React Native', 'Ionic']
+        tools: ['React Native', 'Ionic', 'SwiftUI', 'UIKit']
     },
     {
         name: 'backend',
