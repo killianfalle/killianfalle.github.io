@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.49f20677.css",
-    "main.js": "/static/js/main.9be5941e.js",
+    "main.js": "/static/js/main.2ee07511.js",
     "static/js/787.bff50e23.chunk.js": "/static/js/787.bff50e23.chunk.js",
     "static/media/Montserrat-SemiBoldItalic.ttf": "/static/media/Montserrat-SemiBoldItalic.a8c8285681c31cae8e5d.ttf",
     "static/media/Montserrat-LightItalic.ttf": "/static/media/Montserrat-LightItalic.57ae4565eaf9e1fc53ba.ttf",
@@ -20,11 +20,11 @@
     "static/media/learnmate-logo.png": "/static/media/learnmate-logo.37649cb79827740a3421.png",
     "index.html": "/index.html",
     "main.49f20677.css.map": "/static/css/main.49f20677.css.map",
-    "main.9be5941e.js.map": "/static/js/main.9be5941e.js.map",
+    "main.2ee07511.js.map": "/static/js/main.2ee07511.js.map",
     "787.bff50e23.chunk.js.map": "/static/js/787.bff50e23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49f20677.css",
-    "static/js/main.9be5941e.js"
+    "static/js/main.2ee07511.js"
   ]
 }
