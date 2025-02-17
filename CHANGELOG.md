@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.2] - 2025-02-17
+- Fixed: Convert the 'About Me' description into an array of strings
+
 ## [1.1.0] - 2025-02-17
 - Added: Firebase integration
 - Updated: 'About Me' section to fetch data from Firestore

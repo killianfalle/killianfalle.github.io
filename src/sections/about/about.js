@@ -39,9 +39,11 @@ function About() {
                             </p>
                         )}
 
-                        {section.description && (
+                        {section.description && Array.isArray(section.description) && (
                             <div className="section-content lg:pr-40">
-                                <p className="text">{section.description}</p>
+                                {section.description.map((line, i) => (
+                                    <p key={i} className="text">{line}</p>
+                                ))}
                             </div>
                         )}
                     </div>
