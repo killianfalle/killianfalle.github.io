@@ -4,10 +4,14 @@ import SocialLinks from "../../components/social-links/social-links";
 import Lottie from "react-lottie";
 import { Context } from "../../utils/context/context";
 import scrollDown from "../../assets/lottie/scroll-down.json";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import useFirebaseActions from "../../helpers/firebase/actions";
 
 function Overview() {
     const {sectionRefs} = useContext(Context);
+    const [sections, setSections] = useState([]);
+    const { getDataFromCollection } = useFirebaseActions();
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -20,6 +24,21 @@ function Overview() {
     const executeScroll = () => {
         sectionRefs.current[0].scrollIntoView()
     };
+    
+    const fetchData = async () => {
+        try {
+            const data = await getDataFromCollection("overview");
+            if (data && data.length > 0) {
+                setSections(data);
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []); // Removed dependencies to avoid unnecessary re-renders
 
     return (
         <Section withBackground>
@@ -28,19 +47,21 @@ function Overview() {
             <div className="overview-shape-shadow"/>
             <div className="overview-shape"/>
 
-            <div className="relative">
-                <div className="drop-shadow flex justify-center h-full">
-                    <img className="header-img" src={profile} alt="Profile"/>
-                </div>
-                <p className="salutation">
-                    <span className="salutation-name">Killian Falle</span>
-                    <span className="salutation-semicolon">;</span>
-                </p>
+            {sections.length > 0 && (
+                sections.map((section, index) => (
+                    <div key={index} className="relative">
+                            <div className="drop-shadow flex justify-center h-full">
+                            <img className="header-img" src={profile} alt="Profile"/>
+                        </div>
+                        <p className="salutation">
+                            <span className="salutation-name">{section.name || "Killian Falle"}</span>
+                            <span className="salutation-semicolon">;</span>
+                        </p>
 
-                <p className="headline">
-                    Web and Mobile Application Developer
-                </p>
-            </div>
+                        {section.headline && <p className="headline">{section.headline}</p>}
+                    </div>
+                ))
+            )}
 
 
             <div className="shadow-drop scroll-animation" onClick={executeScroll}>

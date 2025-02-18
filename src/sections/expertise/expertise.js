@@ -1,80 +1,91 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import WebIcon from '@mui/icons-material/Web';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import StorageIcon from '@mui/icons-material/Storage';
 import DevelopmentTools from "../../components/development-tools/development-tools";
 import SemicolonText from "../../components/semicolon-text/semicolon-text";
-
-const list = [
-    {
-        name: 'web',
-        expand: false,
-        tools: ['React', 'Vue', 'HTML', 'CSS', 'SCSS', 'Javascript', 'Typescript']
-    },
-    {
-        name: 'mobile',
-        expand: false,
-        tools: ['React Native', 'Ionic', 'SwiftUI', 'UIKit']
-    },
-    {
-        name: 'backend',
-        expand: false,
-        tools: ['Laravel', 'PHP', 'Firebase']
-    }
-];
+import useFirebaseActions from "../../helpers/firebase/actions";
 
 function Expertise() {
-    const [expertise, setExpertise] = useState(list);
-    
-    const handleExpand = (index) => {
-        let items = [...expertise];
-        let item = {...items[index], expand: !items[index].expand}
-        items[index] = item;
+    const [sections, setSections] = useState([]);
+    const { getDataFromCollection } = useFirebaseActions();
 
-        setExpertise(items);
+    const fetchData = async () => {
+        try {
+            const data = await getDataFromCollection("expertise");
+            if (data && data.length > 0) {
+                setSections(data);
+            }
+        } catch (error) {
+            console.error("Error fetching expertise data:", error);
+        }
     };
+
+    const handleExpand = (sectionIndex, categoryIndex) => {
+        setSections(prevSections => 
+            prevSections.map((section, index) => 
+                index === sectionIndex
+                    ? {
+                        ...section,
+                        categories: section.categories.map((category, cIndex) =>
+                            cIndex === categoryIndex
+                                ? { ...category, expanded: !category.expanded }
+                                : category
+                        )
+                    }
+                    : section
+            )
+        );
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     return (
         <div className="section-container centered">
-            <div className="section-title">
-                <SemicolonText text="Expertise"/>
-            </div>
+            {sections.map((section, sectionIndex) => (
+                <div key={sectionIndex}>
+                    <div className="section-title">
+                        <SemicolonText text={section.title} />
+                    </div>
 
-            <div className="section-content flex justify-center items-center">
-                <div className="expertise-content">
-                    {expertise.map((item, index) => (
-                        <div key={index} className="relative expertise-item-container">
-                            {/* Dev content */}
-                            <div
-                                className={`expertise-item ${item.expand ? "shown" : ""}`}
-                                onClick={() => handleExpand(index)}>
-                                <div className="expertise-overview">
-                                    <div className={`expertise-icon`}>
-                                        {item.name === 'web' && <span><WebIcon /></span>}
-                                        {item.name === 'mobile' && <span><PhoneIphoneIcon /></span>}
-                                        {item.name === 'backend' && <span><StorageIcon /></span>}
+                    <div className="section-content flex justify-center items-center">
+                        <div className="expertise-content">
+                            {section.categories.map((category, categoryIndex) => (
+                                <div key={categoryIndex} className="relative expertise-item-container">
+                                    <div
+                                        className={`expertise-item ${category.expanded ? "shown" : ""}`}
+                                        onClick={() => handleExpand(sectionIndex, categoryIndex)}
+                                    >
+                                        <div className="expertise-overview">
+                                            <div className="expertise-icon">
+                                                {category.type === 'web' && <WebIcon />}
+                                                {category.type === 'mobile' && <PhoneIphoneIcon />}
+                                                {category.type === 'backend' && <StorageIcon />}
+                                            </div>
+                                            <h2 className="expertise-title">
+                                                {category.title}
+                                            </h2>
+                                        </div>
+                                        <p className="expertise-description">
+                                            {category.subtitle}
+                                        </p>
+                                        <ArrowForwardIosIcon className="arrow-icon" />
                                     </div>
-                                    <h2 className="expertise-title">{item.name} {item.name !== 'backend' && "App"} Development</h2>
-                                </div>
-                                <p className="expertise-description">
-                                    {item.name === 'web' && "Passionate about UI/UX and have professional experience working in HTML, CSS, JS, React and Vue frameworks."}
-                                    {item.name === 'mobile' && "Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework."}
-                                    {item.name === 'backend' && "Experienced developing and maintaining server-side applications. Have extensive knowledge about APIs using Laravel."}
-                                </p>
-                                <ArrowForwardIosIcon className="arrow-icon"/>
-                            </div>
 
-                            {/* Dev tools */}
-                            <div className={`devtools-wrapper ${item.expand ? "shown" : ""}`}>
-                                <DevelopmentTools tools={item.tools}/>
-                            </div>
+                                    <div className={`devtools-wrapper ${category.expanded ? "shown" : ""}`}>
+                                        <DevelopmentTools tools={category.tools} />
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
-            </div>
+            ))}
         </div>
     );
 }
-  
+
 export default Expertise;
