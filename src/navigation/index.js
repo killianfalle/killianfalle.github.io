@@ -9,6 +9,7 @@ import RouteList from "./list";
 
 import NavBar from "../components/navbar/navbar";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
+import CursorFollower from "../utils/listeners/cursor-follower"
 
 const NavigationComponent = () => {
   const renderRoutes = () => {
@@ -36,6 +37,7 @@ const NavigationComponent = () => {
         <Routes>
           {renderRoutes()}
         </Routes>
+        <CursorFollower />
       </BrowserRouter>
     </React.Fragment>
   );
