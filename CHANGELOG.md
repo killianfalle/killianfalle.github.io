@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0] - 2025-02-19
+- Added: 'Resume' page and updated navigation to support standalone pages, including redirection to different URLs
+- Added: Implemented a PDF viewer for the resume with a download option
+
 ## [1.2.0] - 2025-02-18
 - Updated: 'Overview' & Expertise section to fetch data from Firestore
 

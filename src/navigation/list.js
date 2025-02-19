@@ -5,6 +5,7 @@ import "../assets/styles/container.scss"
 import Home from "../pages/home/home";
 import NotFound from "../pages/not-found/not-found";
 import Maintenance from "../pages/maintenance/maintenance";
+import Resume from "../pages/resume/resume";
 
 const routes = [
   {
@@ -20,6 +21,14 @@ const routes = [
     component: () => (
       <Container disableGutters maxWidth="3xl" className="page-wrapper">
         <Maintenance />
+      </Container>
+    )
+  },
+  {
+    path: "/resume",
+    component: () => (
+      <Container disableGutters maxWidth="3xl" className="page-wrapper">
+        <Resume />
       </Container>
     )
   },

@@ -17,6 +17,10 @@ export const sectionsList = [
       component: <Projects />
     },
     {
+      name: 'Resume',
+      isStandalone: true
+    },
+    {
       name: 'Contact',
       withBackground: true,
       component: <Contact />
