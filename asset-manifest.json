@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.b0685f09.css",
-    "main.js": "/static/js/main.280fffb7.js",
+    "main.js": "/static/js/main.0f30c2d3.js",
     "static/js/787.bff50e23.chunk.js": "/static/js/787.bff50e23.chunk.js",
+    "static/media/profile.png": "/static/media/profile.e124ac9293f7a8643d64.png",
     "static/media/Montserrat-SemiBoldItalic.ttf": "/static/media/Montserrat-SemiBoldItalic.a8c8285681c31cae8e5d.ttf",
     "static/media/Montserrat-LightItalic.ttf": "/static/media/Montserrat-LightItalic.57ae4565eaf9e1fc53ba.ttf",
     "static/media/Montserrat-MediumItalic.ttf": "/static/media/Montserrat-MediumItalic.5ff27e67ac51fbf02d3f.ttf",
@@ -15,16 +16,15 @@
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "static/media/Montserrat-Black.ttf": "/static/media/Montserrat-Black.08437fd0aa82576d3678.ttf",
     "static/media/Montserrat-Thin.ttf": "/static/media/Montserrat-Thin.413b6b9f23ece3b343a7.ttf",
-    "static/media/profile.png": "/static/media/profile.6798ea5d1ec1e47a383b.png",
     "static/media/conversioncow-logo.png": "/static/media/conversioncow-logo.d4a5f1d9a945ecc77449.png",
     "static/media/learnmate-logo.png": "/static/media/learnmate-logo.37649cb79827740a3421.png",
     "index.html": "/index.html",
     "main.b0685f09.css.map": "/static/css/main.b0685f09.css.map",
-    "main.280fffb7.js.map": "/static/js/main.280fffb7.js.map",
+    "main.0f30c2d3.js.map": "/static/js/main.0f30c2d3.js.map",
     "787.bff50e23.chunk.js.map": "/static/js/787.bff50e23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0685f09.css",
-    "static/js/main.280fffb7.js"
+    "static/js/main.0f30c2d3.js"
   ]
 }
