@@ -10,6 +10,27 @@
         &.left{left: -3vh}
         &.right{right: -3vh}
     }
+    .section-content{
+        transition: 0.5s ease-in-out;
+        margin-left: 3vh;
+    }
+    .section-subtitle{
+        transition: 0.5s ease-in-out;
+        margin-left: -3vh;
+    }
+
+    // About Me
+    .stacks-wrapper {
+        .title{
+            transition: 1s ease-in-out;
+            margin-top: -3vh;
+        }
+
+        .stacks-container{
+            transition: 1s ease-in-out;
+            margin-right: -3vh;
+        }
+    }
 
 
     // Expertise
@@ -55,6 +76,24 @@
                 &.left{left: 0vh}
                 &.right{right: 0vh}
             }
+        }
+        .section-subtitle{
+            margin-left: 0vh;
+        }
+        .section-content{
+            margin-left: 0vh;
+        }
+
+        // About me
+        .stacks-wrapper {
+            .title{
+                margin-top: 0vh;
+            }
+    
+            .stacks-container{
+                margin-right: 0vh;
+            }
+
         }
 
         // Expertise

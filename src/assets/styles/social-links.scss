@@ -12,10 +12,21 @@
         background-color: var(--secondary);
         width: 0.06vw;
         height: 2vw;
+
+        position: relative;
+        animation: leftToRight 1s ease-in-out;
+    }
+
+    .social-media-label {
+        position: relative;
+        animation: topToBottomMiddle 1.5s ease-in-out;
     }
 
     .social-links {
         @apply flex flex-col justify-center items-center space-y-3;
+
+        position: relative;
+        animation: bottomToTopMiddle 2s ease-in-out;
     }
 }
 

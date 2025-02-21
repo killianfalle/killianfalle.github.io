@@ -49,7 +49,7 @@ function About() {
                     </div>
                 ))
             ) : (
-                <p>Loading...</p> // Show loading state before data arrives
+                <p>Loading...</p>
             )}
 
             <TechStacks />

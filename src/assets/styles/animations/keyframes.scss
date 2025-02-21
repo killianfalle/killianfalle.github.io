@@ -76,6 +76,23 @@
     }
 }
 
+@keyframes bottomToTopMiddle {
+    from {
+        bottom: -4vh;
+        opacity: 0;
+    }
+  
+    85% {
+        bottom: -4vh;
+        opacity: 0;
+    }
+  
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
 @keyframes leftToRightMiddle {
     from {
         left: -2vh;
