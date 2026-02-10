@@ -1,6 +1,7 @@
 import About from '../../sections/about/about';
 import Contact from '../../sections/contact/contact';
 import Expertise from '../../sections/expertise/expertise';
+import Firebase from '../../sections/firebase/firebase';
 import Projects from '../../sections/projects/projects';
 
 export const sectionsList = [
@@ -13,12 +14,12 @@ export const sectionsList = [
       component: <Expertise />
     },
     {
-      name: 'Projects',
-      component: <Projects />
+      name: 'Firebase',
+      component: <Firebase />
     },
     {
-      name: 'Resume',
-      isStandalone: true
+      name: 'Projects',
+      component: <Projects />
     },
     {
       name: 'Contact',
