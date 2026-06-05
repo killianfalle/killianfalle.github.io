@@ -67,7 +67,7 @@ function Projects() {
                 <SemicolonText text="Projects"/>
             </div>
 
-            <p className="section-subtitle text-center mt-2 mb-4">This are the few projects that I've worked on.</p>
+            <p className="section-subtitle text-center mt-2 mb-4">A few projects I've worked on.</p>
             <div className="section-content flex justify-center items-center">
                 <div className="projects-content">
                     {projects.map((project, index) => {
