@@ -4,9 +4,9 @@
 
     .expertise-item{
         width: 38vh;
-        @apply rounded relative flex flex-col justify-center md:w-full cursor-pointer bg-primary;
+        @apply rounded relative flex flex-col justify-start md:w-full bg-primary;
         box-shadow: 0px 0px 12px -6px var(--shadow-color);
-        padding: 4vh;
+        padding: 3vh;
         height: 30vh;
         transition: 0.5s ease-in-out;
 
@@ -22,13 +22,23 @@
             font-family: Montserrat-Bold;
         }
 
-        .expertise-description{
-            @apply text-lg w-9/12 md:w-8/12 2md:w-9/12;
+        .expertise-details{
+            @apply w-9/12 md:w-8/12 2md:w-9/12 flex flex-col gap-3;
             position: absolute;
             padding-top: 1vh;
             opacity: 0;
             transition: 0.5s ease-in-out;
+
+            .expertise-details-title {
+                @apply text-lg font-bold mb-1;
+                color: var(--secondary);
+            }
+
+            .expertise-description{
+                @apply text-sm;
+            }
         }
+
 
         .expertise-line{
             @apply mr-1 absolute;
@@ -65,7 +75,7 @@
         &.shown{
             @apply bg-white;
             .expertise-overview{ opacity: 0 }
-            .expertise-description{ opacity: 1 }
+            .expertise-details{ opacity: 1 }
             .expertise-line{ width: 0 }
             .expertise-icon{}
             .arrow-icon{ transform: rotate(-180deg)}

@@ -57,8 +57,9 @@ function Expertise() {
                                 <div key={categoryIndex} className="relative expertise-item-container">
                                     <div
                                         className={`expertise-item ${category.expanded ? "shown" : ""}`}
-                                        onClick={() => handleExpand(sectionIndex, categoryIndex)}
+                                        // onClick={() => handleExpand(sectionIndex, categoryIndex)}
                                     >
+                                        {/* FOLDED */}
                                         <div className="expertise-overview">
                                             <div className="expertise-icon">
                                                 {category.type === 'web' && <WebIcon />}
@@ -69,10 +70,15 @@ function Expertise() {
                                                 {category.title}
                                             </h2>
                                         </div>
-                                        <p className="expertise-description">
-                                            {category.subtitle}
-                                        </p>
-                                        <ArrowForwardIosIcon className="arrow-icon" />
+
+                                        {/* EXPANDED */}
+                                        <div className="expertise-details">
+                                            <p className="expertise-details-title">{category.title}</p>
+                                            <p className="expertise-description">
+                                                {category.subtitle}
+                                            </p>
+                                        </div>
+                                        {/* <ArrowForwardIosIcon className="arrow-icon" /> */}
                                     </div>
 
                                     <div className={`devtools-wrapper ${category.expanded ? "shown" : ""}`}>
