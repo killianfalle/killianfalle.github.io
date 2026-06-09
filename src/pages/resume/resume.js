@@ -38,7 +38,7 @@ function Resume() {
     }, [pdfUrl]);
 
     return (
-        <div className="p-12 justify-items-center overflow-auto" style={{ width: "100vw", height: "100vh"}}>
+        <div className="p-12 mt-8 justify-items-center overflow-auto" style={{ width: "100vw", height: "100vh"}}>
             <div className="flex flex-col">
                 <button 
                     className="bg-primary cursor-pointer px-4 py-3 w-auto rounded-md mb-2 self-end flex items-center gap-1" 

@@ -1,0 +1,88 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.6rem 2.5rem;
+
+    // Glassmorphism
+    background: rgb(209 209 209 / 36%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease,
+      backdrop-filter 0.3s ease;
+  }
+
+  &__logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    a {
+      color: var(--gray);
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--white);
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__cta {
+    border: none;
+    border-radius: 999px;
+
+    padding: 0.75rem 1.5rem;
+
+    background: var(--primary);
+    color: var(--secondary);
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .header{
+        &__container {
+          justify-content: center;
+        }
+    }
+}
+
+@import './mobile/header-mobile.scss';

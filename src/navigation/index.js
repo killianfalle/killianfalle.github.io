@@ -10,6 +10,7 @@ import RouteList from "./list";
 import NavBar from "../components/navbar/navbar";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 import CursorFollower from "../utils/listeners/cursor-follower"
+import Header from "../components/header/header";
 
 const NavigationComponent = () => {
   const renderRoutes = () => {
@@ -34,6 +35,7 @@ const NavigationComponent = () => {
       <BrowserRouter>
         <ScrollToTop />
         <NavBar />
+        <Header />
         <Routes>
           {renderRoutes()}
         </Routes>
